@@ -11,7 +11,7 @@
         <div>
             <asp:Label ID="Lab1" runat="server" Text="Fresh Wok" BackColor="#66CCFF" BorderColor="#FF9900" Font-Italic="True" Font-Size="230%" Height="100px" Width="752px"></asp:Label>
         </div>
-        the number of food<asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
+        &nbsp;food<asp:ListBox ID="ListBox1" runat="server"></asp:ListBox>
     </form>
 </body>
 </html>
