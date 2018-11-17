@@ -13,5 +13,10 @@ namespace CS691final
         {
 
         }
+
+        protected void tbxUsername_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
