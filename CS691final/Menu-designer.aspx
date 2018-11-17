@@ -91,14 +91,8 @@
                       <div class="menu-img" style="background-image: url(images/dish-3.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
-                          <h3><asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1">
-    <Columns>
-        <asp:BoundField DataField="Food_Name" HeaderText="Food_Name" SortExpression="Food_Name" />
-    </Columns>
-                            </asp:GridView><asp:Label ID="Label1" runat="server" Text=""></asp:Label></h3>
-                        
-
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="select Food_Name from Food_Menu where Food_id=00001"></asp:SqlDataSource>
+                          <h3><asp:Label ID="Label1" runat="server" Text=""></asp:Label></h3>
+                    
                           <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                             <p>something egg on it</p>
                            <p> <span>400 Col</span></p>

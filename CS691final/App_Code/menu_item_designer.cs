@@ -19,9 +19,9 @@ namespace CS691final.App_Code
 
         public void ReadRecordById()
         {
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["foodCompany"].ConnectionString);
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
-            string qry = "select * from Food_Menu where (id=@id)";
+            string qry = "select * from Food_Menu where (Food_id=@id)";
             SqlCommand cmd = new SqlCommand(qry, conn);
             cmd.Parameters.AddWithValue("@id", ID);
             SqlDataReader dr = cmd.ExecuteReader();
@@ -31,7 +31,7 @@ namespace CS691final.App_Code
             IngredientsInfo = dr["Food_ingredients"].ToString();
             AllergenInfo = dr["Food_allergen_info"].ToString();
             CategoriesInfo = Convert.ToDouble(dr["Food_categories"].ToString());
-            Price = Convert.ToDouble(dr["Food_price"]);
+            Price = Convert.ToDouble(dr["Food_price"].ToString());
 
             dr.Close();
             conn.Close();

@@ -14,7 +14,9 @@ namespace CS691final
         protected void Page_Load(object sender, EventArgs e)
         {
             menu_item_designer itemReader = new menu_item_designer();
-            itemReader.ID = "00001";
+           
+            
+            itemReader.ID = "1";
             itemReader.ReadRecordById();
             
             Label1.Text = itemReader.FoodName;
