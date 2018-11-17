@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -179,9 +180,11 @@
     <Content Include="Login-admi.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Menu Page.aspx" />
+    <Content Include="Menu-designer.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\menu_item_designer.cs" />
     <Compile Include="Home page.aspx.cs">
       <DependentUpon>Home page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -209,6 +212,13 @@
     </Compile>
     <Compile Include="Menu Page.aspx.designer.cs">
       <DependentUpon>Menu Page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Menu-designer.aspx.cs">
+      <DependentUpon>Menu-designer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Menu-designer.aspx.designer.cs">
+      <DependentUpon>Menu-designer.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
