@@ -16,6 +16,26 @@ namespace CS691final.App_Code
         public double CategoriesInfo { get; set; }
         public double Price { get; set; }
 
+        public void InsertItem()
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string qryStr = "insert into [Food_Menu] values (@id, @name,@ingredients,@allergen,@categories,@price) select @@identity";
+            ////@@IDENTITY returns the last identity value generated for any table in the current session
+            SqlCommand cmd = new SqlCommand(qryStr, conn);
+            cmd.Parameters.AddWithValue("@id",ID);
+            cmd.Parameters.AddWithValue("@name", FoodName);
+            cmd.Parameters.AddWithValue("@ingredients", IngredientsInfo);
+            cmd.Parameters.AddWithValue("@allergen", AllergenInfo);
+            cmd.Parameters.AddWithValue("@categories", CategoriesInfo);
+            cmd.Parameters.AddWithValue("@price", Price);
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            ID = dr[0].ToString();
+            dr.Close();
+            conn.Close();
+        }
+    
 
         public void ReadRecordById()
         {

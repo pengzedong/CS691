@@ -1,0 +1,1 @@
+﻿insert into Food_Menu (Food_Name,Food_ingredients,Food_allergen_info,Food_categories,Food_price) Values('egg-07','egg,coin,apple','egg will allergen',200,40);
