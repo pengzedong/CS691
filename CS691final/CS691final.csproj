@@ -153,6 +153,8 @@
     <Content Include="images\insta-4.jpg" />
     <Content Include="images\insta-5.jpg" />
     <Content Include="images\loc.png" />
+    <Content Include="images\logo01.PNG" />
+    <Content Include="images\Logo02.PNG" />
     <Content Include="images\menu-01.jpg" />
     <Content Include="images\menu-02.jpg" />
     <Content Include="images\menu-03.jpg" />

@@ -31,6 +31,8 @@
   </head>
   <body>
     
+      <form id="form1" runat="server">
+    
       <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
       <div class="container">
         <a class="navbar-brand" href="Home page.aspx">Flavortown restaurant</a>
@@ -74,6 +76,8 @@
             <h2>Taste Our Flavor</h2>
           </div>
         </div>
+         
+
         <div class="row">
           <div class="col-md-12 dish-menu">
 
@@ -566,6 +570,8 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
+    
+      </form>
     
   </body>
 </html>

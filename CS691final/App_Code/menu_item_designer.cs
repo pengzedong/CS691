@@ -20,10 +20,10 @@ namespace CS691final.App_Code
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
-            string qryStr = "insert into [Food_Menu] values (@id, @name,@ingredients,@allergen,@categories,@price) select @@identity";
+            string qryStr = "insert into [Food_Menu] (Food_Name,Food_ingredients,Food_allergen_info,Food_categories,Food_price)values (@name,@ingredients,@allergen,@categories,@price) select @@identity";
             ////@@IDENTITY returns the last identity value generated for any table in the current session
             SqlCommand cmd = new SqlCommand(qryStr, conn);
-            cmd.Parameters.AddWithValue("@id",ID);
+            
             cmd.Parameters.AddWithValue("@name", FoodName);
             cmd.Parameters.AddWithValue("@ingredients", IngredientsInfo);
             cmd.Parameters.AddWithValue("@allergen", AllergenInfo);
@@ -57,6 +57,22 @@ namespace CS691final.App_Code
             conn.Close();
 
             
+        }
+
+        public void DeleteItem()
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string qry = "delete from Food_Menu where (Food_Name=@Name)";
+            SqlCommand cmd = new SqlCommand(qry, conn);
+            cmd.Parameters.AddWithValue("@Name", FoodName);
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+
+            dr.Close();
+            conn.Close();
+
+
         }
     }
 }

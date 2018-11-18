@@ -25,7 +25,7 @@ namespace CS691final
 
 
             if (user.Equals("abc") & password.Equals("good")){
-                Response.Redirect("Login.aspx");
+                Response.Redirect("Menu-designer.aspx");
             }
 
 
