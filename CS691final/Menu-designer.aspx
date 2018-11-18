@@ -487,9 +487,18 @@
     <section>
         <div>
 <form id="designerForm" class="form-horizontal" runat="server">
+    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" DataSourceID="SqlDataSource1">
+        <EmptyDataTemplate>
+            saaa
+        </EmptyDataTemplate>
+    </asp:GridView>
+
+
+
+
             Add new food to list
          <asp:DropDownList ID="FoodType" runat="server" AutoPostBack="True">
-             <asp:ListItem Enabled="False" Selected="True" Value="1">Main</asp:ListItem>
+             <asp:ListItem Value="1">Main</asp:ListItem>
              <asp:ListItem Value="2">Dessert</asp:ListItem>
              <asp:ListItem Value="3">Drinks</asp:ListItem>
          </asp:DropDownList>
@@ -505,7 +514,7 @@
              <asp:CheckBoxList ID="cblCheckDeleteItem" runat="server" DataSourceID="SqlDataSource1" DataTextField="Food_Name" DataValueField="Food_Name"></asp:CheckBoxList>
 
              <asp:Button ID="btnSubmitDelete" runat="server" Text="Submit Delete" OnClick="btnSubmitDelete_Click" />
-             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Food_Name] FROM [Food_Menu]"></asp:SqlDataSource>
+             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Food_Menu]"></asp:SqlDataSource>
 
 
          </div>

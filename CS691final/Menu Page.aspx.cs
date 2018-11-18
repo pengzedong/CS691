@@ -9,6 +9,8 @@ namespace CS691final
 {
     public partial class Menu_Page : System.Web.UI.Page
     {
+
+        protected string var1 = "hello try";
         protected void Page_Load(object sender, EventArgs e)
         {
 

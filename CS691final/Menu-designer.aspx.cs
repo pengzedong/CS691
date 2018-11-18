@@ -10,7 +10,7 @@ namespace CS691final
 {
     public partial class Menu_designer : System.Web.UI.Page
     {
-        String NewItemName;
+        
         protected void Page_Load(object sender, EventArgs e)
         {
             menu_item_designer itemReader = new menu_item_designer();
@@ -27,8 +27,7 @@ namespace CS691final
 
             try
             {
-                if (String.IsNullOrEmpty(NewItemName))
-                {
+               
                     menu_item_designer itemInsert = new menu_item_designer();
 
                     itemInsert.FoodName = tbxName.Text;
@@ -40,7 +39,7 @@ namespace CS691final
                     Response.Redirect("Menu-designer.aspx");
 
 
-                }
+                
             }
             catch (Exception ex) {
                 lblError.Text = ex.Message;

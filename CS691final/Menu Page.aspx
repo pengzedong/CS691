@@ -76,7 +76,7 @@
             <h2>Taste Our Flavor</h2>
           </div>
         </div>
-         
+         <%=var1 %>
 
         <div class="row">
           <div class="col-md-12 dish-menu">
