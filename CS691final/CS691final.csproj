@@ -72,6 +72,7 @@
     <Content Include="App_Data\foodCompany_log.ldf">
       <DependentUpon>foodCompany.mdf</DependentUpon>
     </Content>
+    <Content Include="class diagram.JPG" />
     <Content Include="css\ajax-loader.gif" />
     <Content Include="css\animate.css" />
     <Content Include="css\aos.css" />
