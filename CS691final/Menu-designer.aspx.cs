@@ -88,7 +88,7 @@ namespace CS691final
             for (int i = 0; i < itemList.Count; i++)
             {
                 nameList[i].Text = itemList[i].FoodName;
-                infoList[i].Text = itemList[i].IngredientsInfo + itemList[i].AllergenInfo + itemList[i].CategoriesInfo;
+                infoList[i].Text = "Ingreients:  "+ itemList[i].IngredientsInfo + "  " + "Allergen Information:  " +  itemList[i].AllergenInfo +  "  "  + "Categories:  " + itemList[i].CategoriesInfo;
                 priceList[i].Text = itemList[i].Price.ToString();
             }
 
