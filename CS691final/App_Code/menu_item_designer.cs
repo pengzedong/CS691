@@ -16,6 +16,7 @@ namespace CS691final.App_Code
         public double CategoriesInfo { get; set; }
         public double Price { get; set; }
         public string AD { get; set; }
+        public int pos { get; set; }
 
         public void InsertItem()
         {
@@ -44,7 +45,7 @@ namespace CS691final.App_Code
             conn.Open();
             string qry = "select top @pos * from Food_menu except select top @posNext * from Food_menu";
             SqlCommand cmd = new SqlCommand(qry, conn);
-            cmd.Parameters.AddWithValue("@id", ID);
+            cmd.Parameters.AddWithValue("@pos", pos);
             SqlDataReader dr = cmd.ExecuteReader();
             dr.Read();
             ID = dr["Food_id"].ToString();

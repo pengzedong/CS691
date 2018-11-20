@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
@@ -92,14 +93,14 @@
                                         <div class="text d-flex">
                                             <div class="one-half">
                                                 <h3>
-                                                    <asp:Label ID="Label1" runat="server" Text=""></asp:Label></h3>
+                                                    <asp:Label ID="Label1" runat="server" Text=" "></asp:Label></h3>
 
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                                <p>something egg on it</p>
-                                                <p><span>400 Col</span></p>
+                                                <p><asp:Label ID="Label11" runat="server" Text=" "></asp:Label></p>
+                                                
+                                                
                                             </div>
                                             <div class="one-forth">
-                                                <span class="price">$29</span>
+                                                <span class="price"><asp:Label ID="Label21" runat="server" Text=" "></asp:Label></span>
                                             </div>
                                         </div>
                                     </div>
@@ -107,11 +108,11 @@
                                         <div class="menu-img" style="background-image: url(images/dish-4.jpg);"></div>
                                         <div class="text d-flex">
                                             <div class="one-half">
-                                                <h3>Fruit Vanilla Ice Cream</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                                                <h3><asp:Label ID="Label2" runat="server" Text=" "></asp:Label></h3>
+                                                <p><span><asp:Label ID="Label12" runat="server" Text=" "></asp:Label></span></p>
                                             </div>
                                             <div class="one-forth">
-                                                <span class="price">$29</span>
+                                                <span class="price"><asp:Label ID="Label22" runat="server" Text=" "></asp:Label></span>
                                             </div>
                                         </div>
                                     </div>
@@ -119,11 +120,11 @@
                                         <div class="menu-img" style="background-image: url(images/dish-5.jpg);"></div>
                                         <div class="text d-flex">
                                             <div class="one-half">
-                                                <h3>Asian Hoisin Pork</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                                                <h3><asp:Label ID="Label3" runat="server" Text=" "></asp:Label></h3>
+                                                <p><span><asp:Label ID="Label13" runat="server" Text=" "></asp:Label></span></p>
                                             </div>
                                             <div class="one-forth">
-                                                <span class="price">$29</span>
+                                                <span class="price"><asp:Label ID="Label23" runat="server" Text=" "></asp:Label></span>
                                             </div>
                                         </div>
                                     </div>
@@ -131,11 +132,11 @@
                                         <div class="menu-img" style="background-image: url(images/dish-6.jpg);"></div>
                                         <div class="text d-flex">
                                             <div class="one-half">
-                                                <h3>Spicy Fried Rice &amp; Bacon</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                                                <h3><asp:Label ID="Label4" runat="server" Text=" "></asp:Label></h3>
+                                                <p><span><asp:Label ID="Label14" runat="server" Text=" "></asp:Label></span></p>
                                             </div>
                                             <div class="one-forth">
-                                                <span class="price">$29</span>
+                                                <span class="price"><asp:Label ID="Label24" runat="server" Text=" "></asp:Label></span>
                                             </div>
                                         </div>
                                     </div>
@@ -143,11 +144,11 @@
                                         <div class="menu-img" style="background-image: url(images/dish-7.jpg);"></div>
                                         <div class="text d-flex">
                                             <div class="one-half">
-                                                <h3>Mango Chili Chutney</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                                                <h3><asp:Label ID="Label5" runat="server" Text=""></asp:Label></h3>
+                                                <p><span><asp:Label ID="Label15" runat="server" Text=" "></asp:Label></span></p>
                                             </div>
                                             <div class="one-forth">
-                                                <span class="price">$29</span>
+                                                <span class="price"><asp:Label ID="Label25" runat="server" Text=" "></asp:Label></span>
                                             </div>
                                         </div>
                                     </div>
@@ -158,11 +159,11 @@
                                         <div class="menu-img" style="background-image: url(images/dish-8.jpg);"></div>
                                         <div class="text d-flex">
                                             <div class="one-half">
-                                                <h3>Savory Watercress Chinese Pancakes</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                                                <h3><asp:Label ID="Label6" runat="server" Text=" "></asp:Label></h3>
+                                                <p><span><asp:Label ID="Label16" runat="server" Text=" "></asp:Label></span></p>
                                             </div>
                                             <div class="one-forth">
-                                                <span class="price">$29</span>
+                                                <span class="price"><asp:Label ID="Label26" runat="server" Text=" "></asp:Label></span>
                                             </div>
                                         </div>
                                     </div>
@@ -170,11 +171,11 @@
                                         <div class="menu-img" style="background-image: url(images/dish-9.jpg);"></div>
                                         <div class="text d-flex">
                                             <div class="one-half">
-                                                <h3>Soup With Vegetables And Meat</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                                                <h3><asp:Label ID="Label7" runat="server" Text=" "></asp:Label></h3>
+                                                <p><span><asp:Label ID="Label17" runat="server" Text=" "></asp:Label></span></p>
                                             </div>
                                             <div class="one-forth">
-                                                <span class="price">$29</span>
+                                                <span class="price"><asp:Label ID="Label27" runat="server" Text=" "></asp:Label></span>
                                             </div>
                                         </div>
                                     </div>
@@ -182,11 +183,11 @@
                                         <div class="menu-img" style="background-image: url(images/dish-10.jpg);"></div>
                                         <div class="text d-flex">
                                             <div class="one-half">
-                                                <h3>Udon Noodles With Vegetables</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                                                <h3><asp:Label ID="Label8" runat="server" Text=" "></asp:Label></h3>
+                                                <p><span><asp:Label ID="Label18" runat="server" Text=" "></asp:Label></span></p>
                                             </div>
                                             <div class="one-forth">
-                                                <span class="price">$29</span>
+                                                <span class="price"><asp:Label ID="Label28" runat="server" Text=" "></asp:Label></span>
                                             </div>
                                         </div>
                                     </div>
@@ -194,11 +195,11 @@
                                         <div class="menu-img" style="background-image: url(images/dish-11.jpg);"></div>
                                         <div class="text d-flex">
                                             <div class="one-half">
-                                                <h3>Baked Lobster With A Garnish</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                                                <h3><asp:Label ID="Label9" runat="server" Text=" "></asp:Label></h3>
+                                                <p><span><asp:Label ID="Label19" runat="server" Text=" "></asp:Label></span></p>
                                             </div>
                                             <div class="one-forth">
-                                                <span class="price">$29</span>
+                                                <span class="price"><asp:Label ID="Label29" runat="server" Text=" "></asp:Label></span>
                                             </div>
                                         </div>
                                     </div>
@@ -206,11 +207,11 @@
                                         <div class="menu-img" style="background-image: url(images/dish-12.jpg);"></div>
                                         <div class="text d-flex">
                                             <div class="one-half">
-                                                <h3>Octopus with Vegetables</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                                                <h3><asp:Label ID="Label10" runat="server" Text=" "></asp:Label></h3>
+                                                <p><span><asp:Label ID="Label20" runat="server" Text=" "></asp:Label></span></p>
                                             </div>
                                             <div class="one-forth">
-                                                <span class="price">$29</span>
+                                                <span class="price"><asp:Label ID="Label30" runat="server" Text=" "></asp:Label></span>
                                             </div>
                                         </div>
                                     </div>
@@ -487,11 +488,7 @@
     <section>
         <div>
             <form id="designerForm" class="form-horizontal" runat="server">
-                <asp:GridView ID="GridView1" runat="server" AllowSorting="True" DataSourceID="SqlDataSource1">
-                    <EmptyDataTemplate>
-                        saaa
-                    </EmptyDataTemplate>
-                </asp:GridView>
+               
                 <div>
                     Change Advertising<asp:TextBox ID="tbxNewAdvert" runat="server"></asp:TextBox><asp:Button ID="btnSubmitNewAdvert" runat="server" Text="Submit New Advert" OnClick="btnSubmitNewAdvert_Click" />
                     <asp:Label ID="lblError2" runat="server" Text=" "></asp:Label>
