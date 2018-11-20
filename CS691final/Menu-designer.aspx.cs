@@ -10,12 +10,19 @@ namespace CS691final
 {
     public partial class Menu_designer : System.Web.UI.Page
     {
-        
+
+
+        protected string advertising = "";
+
+       
         protected void Page_Load(object sender, EventArgs e)
         {
             menu_item_designer itemReader = new menu_item_designer();
-           
-            
+            menu_item_designer AdDesigner = new menu_item_designer();
+            advertising = " ";
+            AdDesigner.ReadNewestAdvertising();
+            advertising = AdDesigner.AD;
+
             itemReader.ID = "1";
             itemReader.ReadRecordById();
             
@@ -58,6 +65,19 @@ namespace CS691final
                     Response.Redirect("Menu-designer.aspx");
                 }
 
+            }
+        }
+
+        protected void btnSubmitNewAdvert_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                menu_item_designer advertAdd = new menu_item_designer();
+                advertAdd.AD = tbxNewAdvert.Text;
+                advertAdd.InsertAdvertising();
+            }
+            catch (Exception ex) {
+                lblError2.Text = ex.Message;
             }
         }
     }

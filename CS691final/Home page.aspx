@@ -59,7 +59,7 @@
           <div class="row slider-text align-items-center justify-content-center">
             <div class="col-md-10 col-sm-12 ftco-animate text-center">
             <%--  <p class="breadcrumbs"><span class="mr-2"><a href="Home page.aspx">Home</a></span> <span>Menu</span></p>--%>
-              <h1 class="mb-3">Welcome to FlaovrTown!!!</h1>
+              <h1 class="mb-3"><%=advertising%></h1>
             </div>
           </div>
         </div>

@@ -15,6 +15,7 @@ namespace CS691final.App_Code
         public string AllergenInfo { get; set; }
         public double CategoriesInfo { get; set; }
         public double Price { get; set; }
+        public string AD { get; set; }
 
         public void InsertItem()
         {
@@ -41,7 +42,7 @@ namespace CS691final.App_Code
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
-            string qry = "select * from Food_Menu where (Food_id=@id)";
+            string qry = "select top @pos * from Food_menu except select top @posNext * from Food_menu";
             SqlCommand cmd = new SqlCommand(qry, conn);
             cmd.Parameters.AddWithValue("@id", ID);
             SqlDataReader dr = cmd.ExecuteReader();
@@ -58,6 +59,36 @@ namespace CS691final.App_Code
 
             
         }
+        public void ReadNewestAdvertising()
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string qry = "select top 1 advertising from advert order by id desc";
+            SqlCommand cmd = new SqlCommand(qry, conn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            AD = dr["advertising"].ToString();
+            dr.Close();
+            conn.Close();
+
+
+        }
+
+        public void InsertAdvertising ()
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string qryStr = "insert into [advert] (advertising )values (@advert) select @@identity";
+            ////@@IDENTITY returns the last identity value generated for any table in the current session
+            SqlCommand cmd = new SqlCommand(qryStr, conn);
+
+            cmd.Parameters.AddWithValue("@advert", AD);
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            dr.Close();
+            conn.Close();
+        }
+
 
         public void DeleteItem()
         {

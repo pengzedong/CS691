@@ -56,7 +56,7 @@
                 <div class="row slider-text align-items-center justify-content-center">
                     <div class="col-md-10 col-sm-12 ftco-animate text-center">
                         <%--  <p class="breadcrumbs"><span class="mr-2"><a href="Home page.aspx">Home</a></span> <span>Menu</span></p>--%>
-                        <h1 class="mb-3">Welcome to FlaovrTown!!!</h1>
+                        <h1 class="mb-3"><%=advertising%></h1>
                     </div>
                 </div>
             </div>
@@ -486,38 +486,41 @@
     </section>
     <section>
         <div>
-<form id="designerForm" class="form-horizontal" runat="server">
-    <asp:GridView ID="GridView1" runat="server" AllowSorting="True" DataSourceID="SqlDataSource1">
-        <EmptyDataTemplate>
-            saaa
-        </EmptyDataTemplate>
-    </asp:GridView>
+            <form id="designerForm" class="form-horizontal" runat="server">
+                <asp:GridView ID="GridView1" runat="server" AllowSorting="True" DataSourceID="SqlDataSource1">
+                    <EmptyDataTemplate>
+                        saaa
+                    </EmptyDataTemplate>
+                </asp:GridView>
+                <div>
+                    Change Advertising<asp:TextBox ID="tbxNewAdvert" runat="server"></asp:TextBox><asp:Button ID="btnSubmitNewAdvert" runat="server" Text="Submit New Advert" OnClick="btnSubmitNewAdvert_Click" />
+                    <asp:Label ID="lblError2" runat="server" Text=" "></asp:Label>
+                </div>
 
 
 
-
-            Add new food to list
+                Add new food to list
          <asp:DropDownList ID="FoodType" runat="server" AutoPostBack="True">
              <asp:ListItem Value="1">Main</asp:ListItem>
              <asp:ListItem Value="2">Dessert</asp:ListItem>
              <asp:ListItem Value="3">Drinks</asp:ListItem>
          </asp:DropDownList>
-            
+
                 <asp:TextBox ID="tbxName" runat="server" placeholder="Name" ValidateRequestMode="Enabled"></asp:TextBox>
                 <asp:TextBox ID="tbxIngredients" runat="server" placeholder="Ingredients"></asp:TextBox>
                 <asp:TextBox ID="tbxAllergen" runat="server" placeholder="Allergen information"></asp:TextBox>
                 <asp:TextBox ID="tbxCategories" runat="server" placeholder="Categories"></asp:TextBox>
                 <asp:TextBox ID="tbxPrice" runat="server" placeholder="Price"></asp:TextBox>
- <asp:Button ID="btnSubmitChange" runat="server" Text="Submit Change" OnClick="btnSubmitChange_Click" />
-    <asp:Label ID="lblError" runat="server" Text=" "></asp:Label>
-         <div>
-             <asp:CheckBoxList ID="cblCheckDeleteItem" runat="server" DataSourceID="SqlDataSource1" DataTextField="Food_Name" DataValueField="Food_Name"></asp:CheckBoxList>
+                <asp:Button ID="btnSubmitChange" runat="server" Text="Submit Change" OnClick="btnSubmitChange_Click" />
+                <asp:Label ID="lblError" runat="server" Text=" "></asp:Label>
+                <div>
+                    <asp:CheckBoxList ID="cblCheckDeleteItem" runat="server" DataSourceID="SqlDataSource1" DataTextField="Food_Name" DataValueField="Food_Name"></asp:CheckBoxList>
 
-             <asp:Button ID="btnSubmitDelete" runat="server" Text="Submit Delete" OnClick="btnSubmitDelete_Click" />
-             <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Food_Menu]"></asp:SqlDataSource>
+                    <asp:Button ID="btnSubmitDelete" runat="server" Text="Submit Delete" OnClick="btnSubmitDelete_Click" />
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Food_Menu]"></asp:SqlDataSource>
 
 
-         </div>
+                </div>
 
             </form>
 
@@ -534,6 +537,9 @@
                         <p>Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of food borne illness</p>
 
                     </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 
@@ -543,7 +549,8 @@
         <svg class="circular" width="48px" height="48px">
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
-        </svg></div>
+        </svg>
+    </div>
 
 
     <script src="js/jquery.min.js"></script>

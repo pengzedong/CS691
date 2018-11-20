@@ -58,7 +58,7 @@
           <div class="row slider-text align-items-center justify-content-center">
             <div class="col-md-10 col-sm-12 ftco-animate text-center">
             <%--  <p class="breadcrumbs"><span class="mr-2"><a href="Home page.aspx">Home</a></span> <span>Menu</span></p>--%>
-              <h1 class="mb-3">Welcome to FlaovrTown!!!</h1>
+              <h1 class="mb-3"><%=advertising%></h1>
             </div>
           </div>
         </div>
@@ -76,7 +76,7 @@
             <h2>Taste Our Flavor</h2>
           </div>
         </div>
-         <%=var1 %>
+         
 
         <div class="row">
           <div class="col-md-12 dish-menu">
@@ -321,7 +321,7 @@
                       </div>
                     </div>
                     <div class="menus d-flex ftco-animate">
-                      <div class="menu-img" style="background-image: url(images/dessert-9.jpg);"></div>
+                      <div class="menu-img" style="background-image: url(images/dessert-99.jpg);"></div>
                       <div class="text d-flex">
                         <div class="one-half">
                           <h3>Sicilian Ricotta</h3>
@@ -492,59 +492,9 @@
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">Warmming</h2>
               <p>Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of food borne illness</p>
-              <%--<ul class="ftco-footer-social list-unstyled float-md-left float-lft">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
-              </ul>--%>
+            
             </div>
           </div>
-<%--          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Opening Hours</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">Monday: <span>08: - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Tuesday: <span>08: - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Wednesday: <span>08: - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Thursday: <span>08: - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Friday: <span>08: - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Saturday: <span>08: - 22:00</span></a></li>
-                <li><a href="#" class="py-2 d-block">Sunday: <span>08: - 22:00</span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-             <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Contact Information</h2>
-              <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">198 West 21th Street, Suite 721 New York NY 10016</a></li>
-                <li><a href="#" class="py-2 d-block">+ 1235 2355 98</a></li>
-                <li><a href="#" class="py-2 d-block">info@yoursite.com</a></li>
-                <li><a href="#" class="py-2 d-block">email@email.com</a></li>
-              </ul>
-            </div>
-          </div>--%>
-          <%--<div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Newsletter</h2>
-              <p>Far far away, behind the word mountains, far from the countries.</p>
-              <form action="#" class="subscribe-form">
-                <div class="form-group">
-                  <span class="icon icon-paper-plane"></span>
-                  <input type="text" class="form-control" placeholder="Subscribe">
-                </div>
-              </form>
-            </div>
-          </div>--%>
-        </div>
-<%--        <div class="row">
-          <div class="col-md-12 text-center">
-
-            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This Menu is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="Home.aspx " target="_blank">Flavortown restaurant</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-          </div>
-        </div>--%>
       </div>
     </footer>
     
