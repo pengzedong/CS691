@@ -94,9 +94,12 @@ namespace CS691final
 
 
 
-            menu_item_designer AdDesigner = new menu_item_designer();
+            menu_item_designer AdDesigner;
+            AdDesigner = new menu_item_designer();
+
             advertising = " ";
             AdDesigner.ReadNewestAdvertising();
+            //LabelAD.Text = AdDesigner.AD;
             advertising = AdDesigner.AD;
           
         }
@@ -147,6 +150,7 @@ namespace CS691final
                 menu_item_designer advertAdd = new menu_item_designer();
                 advertAdd.AD = tbxNewAdvert.Text;
                 advertAdd.InsertAdvertising();
+                Response.Redirect("Menu-designer.aspx");
             }
             catch (Exception ex) {
                 lblError2.Text = ex.Message;

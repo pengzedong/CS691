@@ -97,7 +97,8 @@
                                                     <asp:Label ID="Label1" runat="server" Text=" "></asp:Label></h3>
 
                                                 <p><asp:Label ID="Label11" runat="server" Text=" "></asp:Label></p>
-                                                
+                                                <p>
+                                                    <asp:CheckBox ID="CheckBox1" runat="server" OnCheckedChanged="CheckBox1_CheckedChanged" /></p>
                                                 
                                             </div>
                                             <div class="one-forth">
