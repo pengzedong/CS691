@@ -72,6 +72,7 @@
     <Content Include="App_Data\foodCompany_log.ldf">
       <DependentUpon>foodCompany.mdf</DependentUpon>
     </Content>
+    <Content Include="class diagram.JPG" />
     <Content Include="css\ajax-loader.gif" />
     <Content Include="css\animate.css" />
     <Content Include="css\aos.css" />
@@ -191,6 +192,7 @@
     <Content Include="fonts\open-iconic\open-iconic.woff" />
     <Content Include="images\.DS_Store" />
     <Content Include="js\.DS_Store" />
+    <Content Include="CS691 requirement and class diagram.docx" />
     <None Include="packages.config" />
     <Content Include="scss\.DS_Store" />
     <Content Include="scss\bootstrap\bootstrap-grid.scss" />
