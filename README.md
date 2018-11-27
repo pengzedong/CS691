@@ -1,13 +1,31 @@
 CS 691 Restaurant Project
 
+//Desinger: Zedong Peng
+Quality control: 
+
+This is a website software design by Visual Studio 2017. 
+
+The Funtion for each page:
+Home Page - display the resraurant logo and name, for nav bar for customer use
+Menu page - display the food menu
+Login - customer use to login account
+Login-admi - owner and waiter use to login in 
+Registration - customer use to create account
+EmployeeRegistration - the new waiter can create account
+Menu_designer -- owner use to add/delete item at menu and change the advert tag, and link to other manager page
+order -- customer use to choose food and put on the cart
+orderConfirm -- customer can give orders base on cart and choose which store
+OrderMangerPage -- owner can give the order to waiter, so that waiter can prepare the order
+Report - owner can see the weekly report about the food sell and waiter workload
 
 
-This is a website using Visual Studio 2017. 
+
+
 
 Demo:
-For go to designing page. At login page click the manger page. At manger page: use 
-user name:  owner
-password:  qwer
+At login page click the manger page. At manger page: 
+user name:  (owner)
+password:  (qwer)
 
 Iteration 1 Requirements:
 1.	The web page has a list of menu items with ingredients, allergen information, and prices listed on the side.(MUST have)
