@@ -40,6 +40,7 @@ namespace CS691final
 
         }
 
+        //submit the order 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
             ShoppingCart cart = new ShoppingCart();
