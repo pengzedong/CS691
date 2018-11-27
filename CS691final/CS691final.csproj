@@ -91,6 +91,7 @@
     <Content Include="css\owl.carousel.min.css" />
     <Content Include="css\owl.theme.default.min.css" />
     <Content Include="css\style.css" />
+    <Content Include="EmployeeRegistration.aspx" />
     <Content Include="fonts\flaticon\backup.txt" />
     <Content Include="fonts\flaticon\font\flaticon.css" />
     <Content Include="fonts\flaticon\font\flaticon.html" />
@@ -124,11 +125,29 @@
     <Content Include="Login-admi.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Menu Page.aspx" />
-    <Content Include="Menu-designer.aspx" />
+    <Content Include="Menu_designer.aspx" />
+    <Content Include="Order.aspx" />
+    <Content Include="OrderConfirm.aspx" />
+    <Content Include="OrderManagePage.aspx" />
+    <Content Include="Registration.aspx" />
+    <Content Include="Report.aspx" />
+    <Content Include="Waiter.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\CustomerInfo.cs" />
+    <Compile Include="App_Code\EmployeeInfo.cs" />
+    <Compile Include="App_Code\EncrytPassword.cs" />
     <Compile Include="App_Code\menu_item_designer.cs" />
+    <Compile Include="App_Code\OrderUti.cs" />
+    <Compile Include="App_Code\ShoppingCart.cs" />
+    <Compile Include="EmployeeRegistration.aspx.cs">
+      <DependentUpon>EmployeeRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployeeRegistration.aspx.designer.cs">
+      <DependentUpon>EmployeeRegistration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Home page.aspx.cs">
       <DependentUpon>Home page.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -157,14 +176,56 @@
     <Compile Include="Menu Page.aspx.designer.cs">
       <DependentUpon>Menu Page.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Menu-designer.aspx.cs">
-      <DependentUpon>Menu-designer.aspx</DependentUpon>
+    <Compile Include="Menu_designer.aspx.cs">
+      <DependentUpon>Menu_designer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Menu-designer.aspx.designer.cs">
-      <DependentUpon>Menu-designer.aspx</DependentUpon>
+    <Compile Include="Menu_designer.aspx.designer.cs">
+      <DependentUpon>Menu_designer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order.aspx.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Order.aspx.designer.cs">
+      <DependentUpon>Order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderConfirm.aspx.cs">
+      <DependentUpon>OrderConfirm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderConfirm.aspx.designer.cs">
+      <DependentUpon>OrderConfirm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderManagePage.aspx.cs">
+      <DependentUpon>OrderManagePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OrderManagePage.aspx.designer.cs">
+      <DependentUpon>OrderManagePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Waiter.aspx.cs">
+      <DependentUpon>Waiter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Waiter.aspx.designer.cs">
+      <DependentUpon>Waiter.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="css\.DS_Store" />

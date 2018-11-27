@@ -39,27 +39,7 @@ namespace CS691final.App_Code
         }
     
 
-        public void ReadRecordById()
-        {
-            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
-            conn.Open();
-            string qry = "select top @pos * from Food_menu except select top @posNext * from Food_menu";
-            SqlCommand cmd = new SqlCommand(qry, conn);
-            cmd.Parameters.AddWithValue("@pos", pos);
-            SqlDataReader dr = cmd.ExecuteReader();
-            dr.Read();
-            ID = dr["Food_id"].ToString();
-            FoodName = dr["Food_Name"].ToString();
-            IngredientsInfo = dr["Food_ingredients"].ToString();
-            AllergenInfo = dr["Food_allergen_info"].ToString();
-            CategoriesInfo = Convert.ToDouble(dr["Food_categories"].ToString());
-            Price = Convert.ToDouble(dr["Food_price"].ToString());
-
-            dr.Close();
-            conn.Close();
-
-            
-        }
+       
         public void ReadNewestAdvertising()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);

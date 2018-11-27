@@ -22,282 +22,327 @@ namespace CS691final {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Label1 control.
+        /// FoodNameLabel001 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label FoodNameLabel001;
         
         /// <summary>
-        /// Label11 control.
+        /// FoodInfoLabel001 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label11;
+        protected global::System.Web.UI.WebControls.Label FoodInfoLabel001;
         
         /// <summary>
-        /// CheckBox1 control.
+        /// FoodPriceLabel001 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBox1;
+        protected global::System.Web.UI.WebControls.Label FoodPriceLabel001;
         
         /// <summary>
-        /// Label21 control.
+        /// FoodNameLabel002 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label21;
+        protected global::System.Web.UI.WebControls.Label FoodNameLabel002;
         
         /// <summary>
-        /// Label2 control.
+        /// FoodInfoLabel002 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label FoodInfoLabel002;
         
         /// <summary>
-        /// Label12 control.
+        /// FoodPriceLabel002 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label12;
+        protected global::System.Web.UI.WebControls.Label FoodPriceLabel002;
         
         /// <summary>
-        /// Label22 control.
+        /// FoodNameLabel003 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label22;
+        protected global::System.Web.UI.WebControls.Label FoodNameLabel003;
         
         /// <summary>
-        /// Label3 control.
+        /// FoodInfoLabel003 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label FoodInfoLabel003;
         
         /// <summary>
-        /// Label13 control.
+        /// FoodPriceLabel003 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label13;
+        protected global::System.Web.UI.WebControls.Label FoodPriceLabel003;
         
         /// <summary>
-        /// Label23 control.
+        /// FoodNameLabel004 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label23;
+        protected global::System.Web.UI.WebControls.Label FoodNameLabel004;
         
         /// <summary>
-        /// Label4 control.
+        /// FoodInfoLabel004 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label FoodInfoLabel004;
         
         /// <summary>
-        /// Label14 control.
+        /// FoodPriceLabel004 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label14;
+        protected global::System.Web.UI.WebControls.Label FoodPriceLabel004;
         
         /// <summary>
-        /// Label24 control.
+        /// FoodNameLabel005 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label24;
+        protected global::System.Web.UI.WebControls.Label FoodNameLabel005;
         
         /// <summary>
-        /// Label5 control.
+        /// FoodInfoLabel005 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Label FoodInfoLabel005;
         
         /// <summary>
-        /// Label15 control.
+        /// FoodPriceLabel005 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label15;
+        protected global::System.Web.UI.WebControls.Label FoodPriceLabel005;
         
         /// <summary>
-        /// Label25 control.
+        /// FoodNameLabel006 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label25;
+        protected global::System.Web.UI.WebControls.Label FoodNameLabel006;
         
         /// <summary>
-        /// Label6 control.
+        /// FoodInfoLabel006 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label6;
+        protected global::System.Web.UI.WebControls.Label FoodInfoLabel006;
         
         /// <summary>
-        /// Label16 control.
+        /// FoodPriceLabel006 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label16;
+        protected global::System.Web.UI.WebControls.Label FoodPriceLabel006;
         
         /// <summary>
-        /// Label26 control.
+        /// FoodNameLabel007 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label26;
+        protected global::System.Web.UI.WebControls.Label FoodNameLabel007;
         
         /// <summary>
-        /// Label7 control.
+        /// FoodInfoLabel007 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label7;
+        protected global::System.Web.UI.WebControls.Label FoodInfoLabel007;
         
         /// <summary>
-        /// Label17 control.
+        /// FoodPriceLabel007 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label17;
+        protected global::System.Web.UI.WebControls.Label FoodPriceLabel007;
         
         /// <summary>
-        /// Label27 control.
+        /// FoodNameLabel008 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label27;
+        protected global::System.Web.UI.WebControls.Label FoodNameLabel008;
         
         /// <summary>
-        /// Label8 control.
+        /// FoodInfoLabel008 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label8;
+        protected global::System.Web.UI.WebControls.Label FoodInfoLabel008;
         
         /// <summary>
-        /// Label18 control.
+        /// FoodPriceLabel008 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label18;
+        protected global::System.Web.UI.WebControls.Label FoodPriceLabel008;
         
         /// <summary>
-        /// Label28 control.
+        /// FoodNameLabel009 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label28;
+        protected global::System.Web.UI.WebControls.Label FoodNameLabel009;
         
         /// <summary>
-        /// Label9 control.
+        /// FoodInfoLabel009 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label9;
+        protected global::System.Web.UI.WebControls.Label FoodInfoLabel009;
         
         /// <summary>
-        /// Label19 control.
+        /// FoodPriceLabel009 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label19;
+        protected global::System.Web.UI.WebControls.Label FoodPriceLabel009;
         
         /// <summary>
-        /// Label29 control.
+        /// FoodNameLabel010 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label29;
+        protected global::System.Web.UI.WebControls.Label FoodNameLabel010;
         
         /// <summary>
-        /// Label10 control.
+        /// FoodInfoLabel010 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label10;
+        protected global::System.Web.UI.WebControls.Label FoodInfoLabel010;
         
         /// <summary>
-        /// Label20 control.
+        /// FoodPriceLabel010 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label20;
+        protected global::System.Web.UI.WebControls.Label FoodPriceLabel010;
         
         /// <summary>
-        /// Label30 control.
+        /// FoodNameLabel011 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label30;
+        protected global::System.Web.UI.WebControls.Label FoodNameLabel011;
+        
+        /// <summary>
+        /// FoodInfoLabel011 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FoodInfoLabel011;
+        
+        /// <summary>
+        /// FoodPriceLabel011 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FoodPriceLabel011;
+        
+        /// <summary>
+        /// FoodNameLabel012 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FoodNameLabel012;
+        
+        /// <summary>
+        /// FoodInfoLabel012 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FoodInfoLabel012;
+        
+        /// <summary>
+        /// FoodPriceLabel012 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label FoodPriceLabel012;
     }
 }

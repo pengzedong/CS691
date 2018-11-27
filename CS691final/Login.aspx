@@ -31,18 +31,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <style>
-        #form_login {
-            margin: auto;
-            border: 5px solid white;
-        }
-
-        /*body {
-            background-color: wheat;
-        }*/
-
-        .auto-style2 {
-            height: 26px;
-        }
+     
     </style>
 
 </head>
@@ -57,8 +46,9 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="Home page.aspx" class="nav-link">Home</a></li>
+                   <li class="nav-item "><a href="Home page.aspx" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="Menu Page.aspx" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="Order.aspx" class="nav-link">Order</a></li>
                     <li class="nav-item active"><a href="Login.aspx" class="nav-link">Login</a></li>
                 </ul>
             </div>
@@ -85,7 +75,7 @@
       <div class="container">
         <div class="row no-gutters justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2>Make a Reservation</h2>
+            <h2>Customer Login</h2>
           </div>
         </div>
         <div class="row d-flex">
@@ -95,20 +85,23 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="">Name</label>
-                   <asp:TextBox ID="tbxUsername" runat="server" class="form-control" placeholder="Your Name" ></asp:TextBox>
+                    <label for="">User Name</label>
+                   <asp:TextBox ID="tbxUsername" runat="server" class="form-control" placeholder="Your User Name" ></asp:TextBox>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="">Email</label>
-                    <asp:TextBox ID="tbxPassword" runat="server" class="form-control" placeholder="Your Email" ></asp:TextBox>
+                    <label for="">Password</label>
+                    <asp:TextBox ID="tbxPassword" runat="server" class="form-control" placeholder="Your Password" TextMode="Password"></asp:TextBox>
                   </div>
                 </div>
             
                 <div class="col-md-12 mt-3">
                   <div class="form-group">
-                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" class="btn btn-primary py-3 px-5"/>
+                    <asp:Button ID="btnSubmit" runat="server" Text="Login" class="btn btn-primary py-3 px-5" OnClick="btnSubmit_Click"/>
+                       <a href="Registration.aspx ">Become a Member</a>
+                      <br />
+                      <asp:Label ID="LoginStatusMessage" runat="server" Text=" " Visible="false"></asp:Label>
                   </div>
                 </div>
               </div>
@@ -119,82 +112,6 @@
     </section>
 
 
-
-
-
-
-
-
-
-    <%--<section class="ftco-section">
-        <div class="container">
-            <div class="row no-gutters justify-content-center mb-5 pb-5">
-                <div class="col-md-7 text-center heading-section ftco-animate">
-                    <h2>Customer Login</h2>
-                </div>
-            </div>
-            <div class="row d-flex">
-                <div class="col-md-4 ftco-animate img" style="background-image: url(images/menu-03.jpg);"></div>
-                <div class="col-md-8 ftco-animate makereservation p-5 bg-light">
-                    <form id="form_login" runat="server">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">Name</label>
-                                    <asp:TextBox ID="tbxUsername" runat="server" class="form-control" placeholder="Your Name" ></asp:TextBox>
-                                    
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="">Password</label>
-                                    <asp:TextBox ID="tbxPassword" runat="server" class="form-control" placeholder="Your Email" ></asp:TextBox>
-                                    
-                                </div>
-                            </div>
-                          
-                            <div class="col-md-12 mt-3">
-                                <div class="form-group">
-                                    
-                                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" class="btn btn-primary py-3 px-5"/>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>--%>
-
-    <%--<form id="form_login" runat="server">
-        <div class="login">
-            <table>
-                <tr>
-                    <td>
-                        <asp:Label ID="lblUsername" runat="server" Text="Username"></asp:Label>
-
-                    </td>
-                    <td>
-                        <asp:TextBox ID="tbxUsername" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:Label ID="lblPassword" runat="server" Text="Password"></asp:Label>
-                    </td>
-                    <td>
-                        <asp:TextBox ID="tbxPassword" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <asp:Button ID="btnSubmit" runat="server" Text="Submit" />
-                    </td>
-                </tr>
-            </table>
-        </div>
-
-    </form>--%>
     <div style="float: right">
         <a href="Login-admi.aspx ">Manager page(administrator only)</a>
     </div>

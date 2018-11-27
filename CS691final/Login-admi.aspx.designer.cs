@@ -13,15 +13,6 @@ namespace CS691final {
     public partial class Login_admi {
         
         /// <summary>
-        /// form_login control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form_login;
-        
-        /// <summary>
         /// tbxUsername control.
         /// </summary>
         /// <remarks>
@@ -47,6 +38,15 @@ namespace CS691final {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnSubmit;
+        
+        /// <summary>
+        /// LoginStatusMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LoginStatusMessage;
         
         /// <summary>
         /// lblSubmitWarming control.

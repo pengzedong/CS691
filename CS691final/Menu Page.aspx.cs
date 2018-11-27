@@ -26,7 +26,7 @@ namespace CS691final
 
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
-            string qry = "select top 10 * from Food_menu";
+            string qry = "select top 12 * from Food_menu";
             SqlCommand cmd = new SqlCommand(qry, conn);
 
             SqlDataReader dr = cmd.ExecuteReader();
@@ -51,38 +51,44 @@ namespace CS691final
             List<Label> infoList = new List<Label>();
             List<Label> priceList = new List<Label>();
 
-            nameList.Add(Label1);
-            nameList.Add(Label2);
-            nameList.Add(Label3);
-            nameList.Add(Label4);
-            nameList.Add(Label5);
-            nameList.Add(Label6);
-            nameList.Add(Label7);
-            nameList.Add(Label8);
-            nameList.Add(Label9);
-            nameList.Add(Label10);
+            nameList.Add(FoodNameLabel001);
+            nameList.Add(FoodNameLabel002);
+            nameList.Add(FoodNameLabel003);
+            nameList.Add(FoodNameLabel004);
+            nameList.Add(FoodNameLabel005);
+            nameList.Add(FoodNameLabel006);
+            nameList.Add(FoodNameLabel007);
+            nameList.Add(FoodNameLabel008);
+            nameList.Add(FoodNameLabel009);
+            nameList.Add(FoodNameLabel010);
+            nameList.Add(FoodNameLabel011);
+            nameList.Add(FoodNameLabel012);
 
-            infoList.Add(Label11);
-            infoList.Add(Label12);
-            infoList.Add(Label13);
-            infoList.Add(Label14);
-            infoList.Add(Label15);
-            infoList.Add(Label16);
-            infoList.Add(Label17);
-            infoList.Add(Label18);
-            infoList.Add(Label19);
-            infoList.Add(Label20);
+            infoList.Add(FoodInfoLabel001);
+            infoList.Add(FoodInfoLabel002);
+            infoList.Add(FoodInfoLabel003);
+            infoList.Add(FoodInfoLabel004);
+            infoList.Add(FoodInfoLabel005);
+            infoList.Add(FoodInfoLabel006);
+            infoList.Add(FoodInfoLabel007);
+            infoList.Add(FoodInfoLabel008);
+            infoList.Add(FoodInfoLabel009);
+            infoList.Add(FoodInfoLabel010);
+            infoList.Add(FoodInfoLabel011);
+            infoList.Add(FoodInfoLabel012);
 
-            priceList.Add(Label21);
-            priceList.Add(Label22);
-            priceList.Add(Label23);
-            priceList.Add(Label24);
-            priceList.Add(Label25);
-            priceList.Add(Label26);
-            priceList.Add(Label27);
-            priceList.Add(Label28);
-            priceList.Add(Label29);
-            priceList.Add(Label30);
+            priceList.Add(FoodPriceLabel001);
+            priceList.Add(FoodPriceLabel002);
+            priceList.Add(FoodPriceLabel003);
+            priceList.Add(FoodPriceLabel004);
+            priceList.Add(FoodPriceLabel005);
+            priceList.Add(FoodPriceLabel006);
+            priceList.Add(FoodPriceLabel007);
+            priceList.Add(FoodPriceLabel008);
+            priceList.Add(FoodPriceLabel009);
+            priceList.Add(FoodPriceLabel010);
+            priceList.Add(FoodPriceLabel011);
+            priceList.Add(FoodPriceLabel012);
 
 
 
@@ -105,9 +111,6 @@ namespace CS691final
 
         }
 
-        protected void CheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }

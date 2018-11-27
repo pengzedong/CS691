@@ -42,9 +42,10 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="Home page.aspx" class="nav-link">Home</a></li>
-            <li class="nav-item active"><a href="Menu Page.aspx" class="nav-link">Menu</a></li>
-            <li class="nav-item"><a href="Login.aspx" class="nav-link">Login</a></li>
+                 <li class="nav-item"><a href="Home page.aspx" class="nav-link">Home</a></li>
+                    <li class="nav-item active"><a href="Menu Page.aspx" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="Order.aspx" class="nav-link">Order</a></li>
+                    <li class="nav-item"><a href="Login.aspx" class="nav-link">Login</a></li>
           </ul>
         </div>
       </div>
@@ -81,407 +82,244 @@
 
                     <div class="nav nav-pills justify-content-center ftco-animate" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link py-3 px-4 active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true"><span class="flaticon-meat"></span>Main</a>
-                        <a class="nav-link py-3 px-4" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><span class="flaticon-cutlery"></span>Dessert</a>
-                        <a class="nav-link py-3 px-4" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false"><span class="flaticon-cheers"></span>Drinks</a>
+
                     </div>
 
                     <div class="tab-content py-5" id="v-pills-tabContent">
-                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dish-3.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>
-                                                    <asp:Label ID="Label1" runat="server" Text=" "></asp:Label></h3>
+                     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="menus d-flex ftco-animate">
+                                            <div class="menu-img" style="background-image: url(images/dish-3.jpg);"></div>
+                                            <div class="text d-flex">
+                                                <div class="one-half">
+                                                    <h3>
+                                                        <asp:Label ID="FoodNameLabel001" runat="server" Text=" "></asp:Label></h3>
 
-                                                <p><asp:Label ID="Label11" runat="server" Text=" "></asp:Label></p>
-                                                <p>
-                                                    <asp:CheckBox ID="CheckBox1" runat="server" OnCheckedChanged="CheckBox1_CheckedChanged" /></p>
-                                                
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price"><asp:Label ID="Label21" runat="server" Text=" "></asp:Label></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dish-4.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3><asp:Label ID="Label2" runat="server" Text=" "></asp:Label></h3>
-                                                <p><span><asp:Label ID="Label12" runat="server" Text=" "></asp:Label></span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price"><asp:Label ID="Label22" runat="server" Text=" "></asp:Label></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dish-5.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3><asp:Label ID="Label3" runat="server" Text=" "></asp:Label></h3>
-                                                <p><span><asp:Label ID="Label13" runat="server" Text=" "></asp:Label></span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price"><asp:Label ID="Label23" runat="server" Text=" "></asp:Label></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dish-6.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3><asp:Label ID="Label4" runat="server" Text=" "></asp:Label></h3>
-                                                <p><span><asp:Label ID="Label14" runat="server" Text=" "></asp:Label></span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price"><asp:Label ID="Label24" runat="server" Text=" "></asp:Label></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dish-7.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3><asp:Label ID="Label5" runat="server" Text=""></asp:Label></h3>
-                                                <p><span><asp:Label ID="Label15" runat="server" Text=" "></asp:Label></span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price"><asp:Label ID="Label25" runat="server" Text=" "></asp:Label></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                                    <p>
+                                                        <asp:Label ID="FoodInfoLabel001" runat="server" Text=" "></asp:Label>
+                                                    </p>
 
-                                <div class="col-lg-6">
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dish-8.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3><asp:Label ID="Label6" runat="server" Text=" "></asp:Label></h3>
-                                                <p><span><asp:Label ID="Label16" runat="server" Text=" "></asp:Label></span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price"><asp:Label ID="Label26" runat="server" Text=" "></asp:Label></span>
+
+                                                </div>
+                                                <div class="one-forth">
+                                                    <span class="price">
+                                                        <asp:Label ID="FoodPriceLabel001" runat="server" Text=" "></asp:Label></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dish-9.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3><asp:Label ID="Label7" runat="server" Text=" "></asp:Label></h3>
-                                                <p><span><asp:Label ID="Label17" runat="server" Text=" "></asp:Label></span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price"><asp:Label ID="Label27" runat="server" Text=" "></asp:Label></span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dish-10.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3><asp:Label ID="Label8" runat="server" Text=" "></asp:Label></h3>
-                                                <p><span><asp:Label ID="Label18" runat="server" Text=" "></asp:Label></span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price"><asp:Label ID="Label28" runat="server" Text=" "></asp:Label></span>
+                                        <div class="menus d-flex ftco-animate">
+                                            <div class="menu-img" style="background-image: url(images/dish-4.jpg);"></div>
+                                            <div class="text d-flex">
+                                                <div class="one-half">
+                                                    <h3>
+                                                        <asp:Label ID="FoodNameLabel002" runat="server" Text=" "></asp:Label></h3>
+                                                    <p>
+                                                        <span>
+                                                            <asp:Label ID="FoodInfoLabel002" runat="server" Text=" "></asp:Label></span>
+                                                    </p>
+
+                                                </div>
+                                                <div class="one-forth">
+                                                    <span class="price">
+                                                        <asp:Label ID="FoodPriceLabel002" runat="server" Text=" "></asp:Label></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dish-11.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3><asp:Label ID="Label9" runat="server" Text=" "></asp:Label></h3>
-                                                <p><span><asp:Label ID="Label19" runat="server" Text=" "></asp:Label></span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price"><asp:Label ID="Label29" runat="server" Text=" "></asp:Label></span>
+                                        <div class="menus d-flex ftco-animate">
+                                            <div class="menu-img" style="background-image: url(images/dish-5.jpg);"></div>
+                                            <div class="text d-flex">
+                                                <div class="one-half">
+                                                    <h3>
+                                                        <asp:Label ID="FoodNameLabel003" runat="server" Text=" "></asp:Label></h3>
+                                                    <p>
+                                                        <span>
+                                                            <asp:Label ID="FoodInfoLabel003" runat="server" Text=" "></asp:Label></span>
+                                                    </p>
+
+                                                </div>
+                                                <div class="one-forth">
+                                                    <span class="price">
+                                                        <asp:Label ID="FoodPriceLabel003" runat="server" Text=" "></asp:Label></span>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dish-12.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3><asp:Label ID="Label10" runat="server" Text=" "></asp:Label></h3>
-                                                <p><span><asp:Label ID="Label20" runat="server" Text=" "></asp:Label></span></p>
+                                        <div class="menus d-flex ftco-animate">
+                                            <div class="menu-img" style="background-image: url(images/dish-6.jpg);"></div>
+                                            <div class="text d-flex">
+                                                <div class="one-half">
+                                                    <h3>
+                                                        <asp:Label ID="FoodNameLabel004" runat="server" Text=" "></asp:Label></h3>
+                                                    <p>
+                                                        <span>
+                                                            <asp:Label ID="FoodInfoLabel004" runat="server" Text=" "></asp:Label></span>
+                                                    </p>
+
+                                                </div>
+                                                <div class="one-forth">
+                                                    <span class="price">
+                                                        <asp:Label ID="FoodPriceLabel004" runat="server" Text=" "></asp:Label></span>
+                                                </div>
                                             </div>
-                                            <div class="one-forth">
-                                                <span class="price"><asp:Label ID="Label30" runat="server" Text=" "></asp:Label></span>
+                                        </div>
+                                        <div class="menus d-flex ftco-animate">
+                                            <div class="menu-img" style="background-image: url(images/dish-7.jpg);"></div>
+                                            <div class="text d-flex">
+                                                <div class="one-half">
+                                                    <h3>
+                                                        <asp:Label ID="FoodNameLabel005" runat="server" Text=""></asp:Label></h3>
+                                                    <p>
+                                                        <span>
+                                                            <asp:Label ID="FoodInfoLabel005" runat="server" Text=" "></asp:Label></span>
+                                                    </p>
+
+                                                </div>
+                                                <div class="one-forth">
+                                                    <span class="price">
+                                                        <asp:Label ID="FoodPriceLabel005" runat="server" Text=" "></asp:Label></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menus d-flex ftco-animate">
+                                            <div class="menu-img" style="background-image: url(images/dish-8.jpg);"></div>
+                                            <div class="text d-flex">
+                                                <div class="one-half">
+                                                    <h3>
+                                                        <asp:Label ID="FoodNameLabel006" runat="server" Text=" "></asp:Label></h3>
+                                                    <p>
+                                                        <span>
+                                                            <asp:Label ID="FoodInfoLabel006" runat="server" Text=" "></asp:Label></span>
+                                                    </p>
+
+                                                </div>
+                                                <div class="one-forth">
+                                                    <span class="price">
+                                                        <asp:Label ID="FoodPriceLabel006" runat="server" Text=" "></asp:Label></span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-lg-6">
+
+                                        <div class="menus d-flex ftco-animate">
+                                            <div class="menu-img" style="background-image: url(images/dish-9.jpg);"></div>
+                                            <div class="text d-flex">
+                                                <div class="one-half">
+                                                    <h3>
+                                                        <asp:Label ID="FoodNameLabel007" runat="server" Text=" "></asp:Label></h3>
+                                                    <p>
+                                                        <span>
+                                                            <asp:Label ID="FoodInfoLabel007" runat="server" Text=" "></asp:Label></span>
+                                                    </p>
+
+                                                </div>
+                                                <div class="one-forth">
+                                                    <span class="price">
+                                                        <asp:Label ID="FoodPriceLabel007" runat="server" Text=" "></asp:Label></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menus d-flex ftco-animate">
+                                            <div class="menu-img" style="background-image: url(images/dish-10.jpg);"></div>
+                                            <div class="text d-flex">
+                                                <div class="one-half">
+                                                    <h3>
+                                                        <asp:Label ID="FoodNameLabel008" runat="server" Text=" "></asp:Label></h3>
+                                                    <p>
+                                                        <span>
+                                                            <asp:Label ID="FoodInfoLabel008" runat="server" Text=" "></asp:Label></span>
+                                                    </p>
+
+                                                </div>
+                                                <div class="one-forth">
+                                                    <span class="price">
+                                                        <asp:Label ID="FoodPriceLabel008" runat="server" Text=" "></asp:Label></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menus d-flex ftco-animate">
+                                            <div class="menu-img" style="background-image: url(images/dish-11.jpg);"></div>
+                                            <div class="text d-flex">
+                                                <div class="one-half">
+                                                    <h3>
+                                                        <asp:Label ID="FoodNameLabel009" runat="server" Text=" "></asp:Label></h3>
+                                                    <p>
+                                                        <span>
+                                                            <asp:Label ID="FoodInfoLabel009" runat="server" Text=" "></asp:Label></span>
+                                                    </p>
+
+                                                </div>
+                                                <div class="one-forth">
+                                                    <span class="price">
+                                                        <asp:Label ID="FoodPriceLabel009" runat="server" Text=" "></asp:Label></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menus d-flex ftco-animate">
+                                            <div class="menu-img" style="background-image: url(images/dish-12.jpg);"></div>
+                                            <div class="text d-flex">
+                                                <div class="one-half">
+                                                    <h3>
+                                                        <asp:Label ID="FoodNameLabel010" runat="server" Text=" "></asp:Label></h3>
+                                                    <p>
+                                                        <span>
+                                                            <asp:Label ID="FoodInfoLabel010" runat="server" Text=" "></asp:Label></span>
+                                                    </p>
+
+                                                </div>
+                                                <div class="one-forth">
+                                                    <span class="price">
+                                                        <asp:Label ID="FoodPriceLabel010" runat="server" Text=" "></asp:Label></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menus d-flex ftco-animate">
+                                            <div class="menu-img" style="background-image: url(images/dish-12.jpg);"></div>
+                                            <div class="text d-flex">
+                                                <div class="one-half">
+                                                    <h3>
+                                                        <asp:Label ID="FoodNameLabel011" runat="server" Text=" "></asp:Label></h3>
+                                                    <p>
+                                                        <span>
+                                                            <asp:Label ID="FoodInfoLabel011" runat="server" Text=" "></asp:Label></span>
+                                                    </p>
+
+                                                </div>
+                                                <div class="one-forth">
+                                                    <span class="price">
+                                                        <asp:Label ID="FoodPriceLabel011" runat="server" Text=" "></asp:Label></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="menus d-flex ftco-animate">
+                                            <div class="menu-img" style="background-image: url(images/dish-12.jpg);"></div>
+                                            <div class="text d-flex">
+                                                <div class="one-half">
+                                                    <h3>
+                                                        <asp:Label ID="FoodNameLabel012" runat="server" Text=" "></asp:Label></h3>
+                                                    <p>
+                                                        <span>
+                                                            <asp:Label ID="FoodInfoLabel012" runat="server" Text=" "></asp:Label></span>
+                                                    </p>
+
+                                                </div>
+                                                <div class="one-forth">
+                                                    <span class="price">
+                                                        <asp:Label ID="FoodPriceLabel012" runat="server" Text=" "></asp:Label></span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
                         <!-- END -->
 
-                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dessert-1.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Grilled Beef with potatoes</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dessert-2.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Grilled Beef with potatoes</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dessert-3.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Grilled Beef with potatoes</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dessert-4.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Grilled Beef with potatoes</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dessert-5.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Grilled Beef with potatoes</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dessert-6.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Tiramisu</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dessert-7.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Chocolate Cream</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dessert-8.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Pizza Pie</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dessert-9.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Sicilian Ricotta</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/dessert-10.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Mango FLoat</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <!-- END -->
 
-                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/drink-1.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Lemon Juice</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/drink-2.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Guava Juice</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/drink-3.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Sprite</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/drink-4.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Cola</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/drink-5.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Wine</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-lg-6">
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/drink-6.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Beer</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/drink-7.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Mango Juice</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/drink-8.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Apple Juice</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/drink-9.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Strawberry Juice</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="menus d-flex ftco-animate">
-                                        <div class="menu-img" style="background-image: url(images/drink-10.jpg);"></div>
-                                        <div class="text d-flex">
-                                            <div class="one-half">
-                                                <h3>Orange Juice</h3>
-                                                <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
-                                            </div>
-                                            <div class="one-forth">
-                                                <span class="price">$29</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
@@ -501,6 +339,7 @@
             </div>
           </div>
       </div>
+          </div>
     </footer>
     
   
