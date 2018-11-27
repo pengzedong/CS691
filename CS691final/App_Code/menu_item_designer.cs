@@ -18,6 +18,8 @@ namespace CS691final.App_Code
         public string AD { get; set; }
         public int pos { get; set; }
 
+
+        //add item to food list
         public void InsertItem()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
@@ -39,7 +41,7 @@ namespace CS691final.App_Code
         }
     
 
-       
+       //get newest advert from database
         public void ReadNewestAdvertising()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
@@ -55,6 +57,7 @@ namespace CS691final.App_Code
 
         }
 
+        //put new advert in the database
         public void InsertAdvertising ()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
@@ -70,7 +73,7 @@ namespace CS691final.App_Code
             conn.Close();
         }
 
-
+        // delete food from menu
         public void DeleteItem()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);

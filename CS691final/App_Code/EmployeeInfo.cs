@@ -16,6 +16,8 @@ namespace CS691final.App_Code
         public string Password { get; set; }
         public string StoreId { get; set; }
 
+
+        //add employ info to database
         public void InsertEmployeeData()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
@@ -32,6 +34,8 @@ namespace CS691final.App_Code
             conn.Close();
 
         }//close InsertCustomerDate() method
+
+        //check dont have same username
         public bool CheckUserExit()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
@@ -55,7 +59,7 @@ namespace CS691final.App_Code
             }
         }//close checkUserExit() method
 
-
+        //check password is correct
         public bool checkPassword()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);

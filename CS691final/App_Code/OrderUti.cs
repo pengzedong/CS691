@@ -18,6 +18,9 @@ namespace CS691final.App_Code
         public Boolean Status { get; set; }
         public string Waiter { get; set; }
 
+
+
+        //insert order info to database
         public void InsertOrder ()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
@@ -38,6 +41,7 @@ namespace CS691final.App_Code
 
         }//close insertOrderCart method
 
+        //add waiter for each order, it set by owner 
         public void Updatawaiter()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);

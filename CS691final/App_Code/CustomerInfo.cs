@@ -55,7 +55,7 @@ namespace CS691final.App_Code
             }
         }//close checkUserExit() method
 
-
+        //check password is correct
         public bool checkPassword()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);

@@ -14,7 +14,9 @@ namespace CS691final.App_Code
         public string UserName { get; set; }
         public string OrderFood { get; set; }
         public double Price { get; set; }
+        
 
+        //insert shoppint list info 
         public void InsertShoppingCart()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
