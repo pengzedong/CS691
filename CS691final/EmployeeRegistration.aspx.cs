@@ -33,7 +33,7 @@ namespace CS691final
                 employee.InsertEmployeeData();
                 Response.Write("<script> alert('Welcome to FloverTown')</script>");
                 //Response.AddHeader("refresh", "3;url=Login-admi.aspx");
-                Response.Redirect("Login - admi.aspx");
+                Response.Redirect("Login-admi.aspx");
             }
             else
             {
