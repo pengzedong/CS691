@@ -15,7 +15,7 @@ namespace CS691final.App_Code
         public string Email { get; set; }
         public string Password { get; set; }
 
-        
+        // use to insert customer info
         public void InsertCustomerData()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
