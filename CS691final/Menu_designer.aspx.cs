@@ -132,7 +132,7 @@ namespace CS691final
                 itemInsert.CategoriesInfo = Convert.ToDouble(tbxCategories.Text);
                 itemInsert.Price = Convert.ToDouble(tbxPrice.Text);
                 itemInsert.InsertItem();
-                Response.Redirect("Menu-designer.aspx");
+                Response.Redirect("Menu_designer.aspx");
 
 
 
@@ -154,7 +154,7 @@ namespace CS691final
                 {
                     itemDelete.FoodName = cblCheckDeleteItem.Items[i].Text;
                     itemDelete.DeleteItem();
-                    Response.Redirect("Menu-designer.aspx");
+                    Response.Redirect("Menu_designer.aspx");
                 }
 
             }
@@ -167,7 +167,7 @@ namespace CS691final
                 menu_item_designer advertAdd = new menu_item_designer();
                 advertAdd.AD = tbxNewAdvert.Text;
                 advertAdd.InsertAdvertising();
-                Response.Redirect("Menu-designer.aspx");
+                Response.Redirect("Menu_designer.aspx");
             }
             catch (Exception ex)
             {
