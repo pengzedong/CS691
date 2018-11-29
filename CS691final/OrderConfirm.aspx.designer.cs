@@ -31,6 +31,15 @@ namespace CS691final {
         protected global::System.Web.UI.WebControls.Label FoodListView;
         
         /// <summary>
+        /// Label1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
         /// FoodPriceView control.
         /// </summary>
         /// <remarks>
@@ -49,13 +58,31 @@ namespace CS691final {
         protected global::System.Web.UI.WebControls.DropDownList DropDownListStoreLocation;
         
         /// <summary>
-        /// Label1 control.
+        /// RadioButtonListTip control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.RadioButtonList RadioButtonListTip;
+        
+        /// <summary>
+        /// tbxCustomize control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbxCustomize;
+        
+        /// <summary>
+        /// btnAddCustomizeTip control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAddCustomizeTip;
         
         /// <summary>
         /// btnSubmit control.

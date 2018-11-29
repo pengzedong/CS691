@@ -90,13 +90,14 @@
                     <label for="">Food Order List</label>
                       <br />
                       <asp:Label ID="FoodListView" runat="server"   Text=" " ForeColor="Red"></asp:Label>
+                      <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                    
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-group">
-                    <label for="">Price</label>
-                    <asp:Label ID="FoodPriceView" runat="server"  Text=" "></asp:Label>
+                    <label for="" >Food Price</label>
+                    <asp:Label ID="FoodPriceView" runat="server"  Text=" " Font-Size="Large" ForeColor="Red"></asp:Label>
                   </div>
                 </div>
 
@@ -110,7 +111,25 @@
                           <asp:ListItem Value="3">Mall Store</asp:ListItem>
                       </asp:DropDownList>
 
-                    <asp:Label ID="Label1" runat="server"  Text=" "></asp:Label>
+                    
+                  </div>
+                </div>
+
+                   <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="">Add tip</label>
+                      <br />
+                      <asp:RadioButtonList ID="RadioButtonListTip" runat="server" AutoPostBack="True" OnSelectedIndexChanged="RadioButtonListTip_SelectedIndexChanged">
+                          <asp:ListItem Selected="True" Value="0">NO tip</asp:ListItem>
+                          <asp:ListItem Value="0.1">10%</asp:ListItem>
+                         
+                          <asp:ListItem Value="0.15">15%</asp:ListItem>
+                          <asp:ListItem Value="0.2">20% </asp:ListItem>                         
+                          <asp:ListItem Value="1">Customize</asp:ListItem>                         
+                      </asp:RadioButtonList>
+                      <asp:TextBox ID="tbxCustomize" runat="server" Visible="False"></asp:TextBox>
+                      <asp:Button ID="btnAddCustomizeTip" runat="server" Text="Add Tip to Price" Visible="False" OnClick="btnAddCustomizeTip_Click" />
+                    
                   </div>
                 </div>
 
