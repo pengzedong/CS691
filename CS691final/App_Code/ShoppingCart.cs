@@ -57,6 +57,20 @@ namespace CS691final.App_Code
 
 
         }
+        public void UpdateCartPrice() {
+
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string qryStr = "Update ShoppingCart set  ShoppingCart.Price =@price where Id=@id ";
+            ////@@IDENTITY returns the last identity value generated for any table in the current session
+            SqlCommand cmd = new SqlCommand(qryStr, conn);            
+            cmd.Parameters.AddWithValue("@id", Id);
+            cmd.Parameters.AddWithValue("@price", Price);
+
+            cmd.ExecuteNonQuery();
+            conn.Close();
+
+        }
 
          
 

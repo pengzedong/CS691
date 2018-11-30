@@ -23,7 +23,7 @@
                     Order Flow
       <asp:CheckBoxList ID="CheckBoxListOrderList" runat="server" DataSourceID="SqlDataSource1" DataTextField="orderInfo" DataValueField="OrderID" AutoPostBack="True"></asp:CheckBoxList>
 
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT OrderID, CONCAT(StoreID, OrderFood,OrderTime)  as orderInfo FROM [OrderHistory] where status= 0 order by OrderTime"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT OrderID, CONCAT(StoreID, OrderFood,OrderTime)  as orderInfo FROM [OrderHistory] where status= 'Order Recevied' order by OrderTime"></asp:SqlDataSource>
                 </div>
                 <div class="col-sm-6" style="background-color: lavenderblush;">
                     Waiter List

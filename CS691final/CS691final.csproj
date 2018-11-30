@@ -131,7 +131,7 @@
     <Content Include="OrderManagePage.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="Report.aspx" />
-    <Content Include="Waiter.aspx" />
+    <Content Include="DirectorPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -219,12 +219,12 @@
     <Compile Include="Report.aspx.designer.cs">
       <DependentUpon>Report.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Waiter.aspx.cs">
-      <DependentUpon>Waiter.aspx</DependentUpon>
+    <Compile Include="DirectorPage.aspx.cs">
+      <DependentUpon>DirectorPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Waiter.aspx.designer.cs">
-      <DependentUpon>Waiter.aspx</DependentUpon>
+    <Compile Include="DirectorPage.aspx.designer.cs">
+      <DependentUpon>DirectorPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

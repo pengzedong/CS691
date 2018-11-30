@@ -41,11 +41,15 @@ namespace CS691final
                     Response.Redirect("Menu_designer.aspx");
 
                 }
-                
+                if (employee.checkDirector()) {
+
+                    Response.Redirect("DirectorPage.aspx");
+                }
+
                 LoginStatusMessage.Visible = true;
                 LoginStatusMessage.Text = "Welcome Back ";
                 //Response.AddHeader("refresh", "2;url=Order.aspx");
-                Response.Redirect("Waiter.aspx");
+                
             }
             else
             {

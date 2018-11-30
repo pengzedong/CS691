@@ -18,7 +18,7 @@
       <asp:GridView ID="GridView1" runat="server" DataSourceID="SqlDataSource1" AllowPaging="True" AllowSorting="True">
       </asp:GridView>
 
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT StoreID, OrderFood,OrderTime,Price,Waiter  FROM [OrderHistory] where status= 1 and OrderTime >= DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE()) / 7 * 7, 0) AND  OrderTime<= DATEADD(DAY, DATEDIFF(DAY, -1, GETDATE()), 0) order by Waiter"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT StoreID, OrderFood,OrderTime,Price,Waiter  FROM [OrderHistory] where OrderTime >= DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE()) / 7 * 7, 0) AND  OrderTime<= DATEADD(DAY, DATEDIFF(DAY, -1, GETDATE()), 0) order by Waiter"></asp:SqlDataSource>
                 </div>
                 <div class="col-sm-6" style="background-color: lavenderblush;">
                     Waiter WorkLoad
@@ -29,7 +29,7 @@
                         </Columns>
                     </asp:GridView>
 
-                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT Waiter as WaitersName, COUNT(OrderID) as WorkLoad FROM OrderHistory where status= 1 and OrderTime >= DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE()) / 7 * 7, 0) AND  OrderTime<= DATEADD(DAY, DATEDIFF(DAY, -1, GETDATE()), 0) group by waiter
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT Waiter as WaitersName, COUNT(OrderID) as WorkLoad FROM OrderHistory where OrderTime >= DATEADD(DAY, DATEDIFF(DAY, 0, GETDATE()) / 7 * 7, 0) AND  OrderTime<= DATEADD(DAY, DATEDIFF(DAY, -1, GETDATE()), 0) group by waiter
 "></asp:SqlDataSource>
 
                     <div>

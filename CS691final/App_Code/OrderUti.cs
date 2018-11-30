@@ -15,7 +15,7 @@ namespace CS691final.App_Code
         public double Price { get; set; }
         public string StoreId { get; set; }
         public DateTime Ordertime { get; set; }
-        public Boolean Status { get; set; }
+        public string Status { get; set; }
         public string Waiter { get; set; }
 
 
@@ -25,7 +25,7 @@ namespace CS691final.App_Code
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
-            string qryStr = "insert into [Orderhistory] (UserName,OrderFood,Price,StoreID,OrderTime,Status,Waiter)values (@username,@orderfood,@price,@storeId,@ordertime,0,'null')";
+            string qryStr = "insert into [Orderhistory] (UserName,OrderFood,Price,StoreID,OrderTime,Status,Waiter)values (@username,@orderfood,@price,@storeId,@ordertime,'Order Recevied','null')";
             ////@@IDENTITY returns the last identity value generated for any table in the current session
             SqlCommand cmd = new SqlCommand(qryStr, conn);
 
@@ -46,9 +46,22 @@ namespace CS691final.App_Code
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
-            string updataStr = "update OrderHistory Set OrderHistory.Waiter=@waiter ,OrderHistory.Status =1 where OrderHistory.OrderID=@id";
+            string updataStr = "update OrderHistory Set OrderHistory.Waiter=@waiter ,OrderHistory.Status ='Order in-preparation' where OrderHistory.OrderID=@id";
             SqlCommand comd = new SqlCommand(updataStr, conn);
             comd.Parameters.AddWithValue("@waiter", this.Waiter);
+            comd.Parameters.AddWithValue("@id", this.Id);
+            comd.ExecuteNonQuery();
+            conn.Close();
+
+
+        }
+
+        public void UpdateOrderStatus() {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string updataStr = "update OrderHistory Set OrderHistory.Status=@status where OrderHistory.OrderID=@id";
+            SqlCommand comd = new SqlCommand(updataStr, conn);
+            comd.Parameters.AddWithValue("@status", this.Status);
             comd.Parameters.AddWithValue("@id", this.Id);
             comd.ExecuteNonQuery();
             conn.Close();

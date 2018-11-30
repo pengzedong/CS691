@@ -80,7 +80,66 @@ namespace CS691final.App_Code
             }
             return false;
         }
-
         
+        //check Director account
+        public bool checkDirector() {
+
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string quary = "select * from Employee where Username=@username";
+            SqlCommand comd = new SqlCommand(quary, conn);
+            comd.Parameters.AddWithValue("@username", UserName);
+            SqlDataReader dr = comd.ExecuteReader();
+            dr.Read();
+            if (dr.HasRows)
+            {
+                if (dr["Position"].ToString().Equals("Director"))
+                {
+                    dr.Close();
+                    conn.Close();
+                    return true;
+                }
+            }
+            return false;
+        }//end directorcheck 
+
+        //delete Employee account
+        public void DeleteEmployee() {
+
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string quary = "delete from Employee where Name=@name";
+            SqlCommand comd = new SqlCommand(quary, conn);
+            comd.Parameters.AddWithValue("@name", Name);
+            comd.ExecuteNonQuery();
+            conn.Close();
+
+        }
+
+        //change employee position to director
+        public void ChangeEmployeePositionToDirector() {
+
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string quary = "update employee set employee.position='Director' where Name=@name";
+            SqlCommand comd = new SqlCommand(quary, conn);
+            comd.Parameters.AddWithValue("@name", Name);
+            comd.ExecuteNonQuery();
+            conn.Close();
+        }//end change employee position to director
+
+        //change employee position to waiter
+        public void ChangeEmployeePositionToWaiter()
+        {
+
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string quary = "update employee set employee.position='Waiter' where Name=@name";
+            SqlCommand comd = new SqlCommand(quary, conn);
+            comd.Parameters.AddWithValue("@name", Name);
+            comd.ExecuteNonQuery();
+            conn.Close();
+        }// end change employee position to waiter
+
     }
 }

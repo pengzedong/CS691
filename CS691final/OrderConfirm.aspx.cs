@@ -15,10 +15,7 @@ namespace CS691final
 
     {
         string cartId;
-        double a;
-        double aa ;
-        string b;
-        string c;
+       
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -59,27 +56,7 @@ namespace CS691final
             OrderUti order = new OrderUti();
             order.UserName = cart.UserName;
             order.OrderFood = cart.OrderFood;
-
-            //Response.Write(FoodPriceView.Text);
-            //Response.Write(FoodPriceView.ToString());
-            //Response.Write(FoodPriceView.Text.ToString());
-            //Response.Write(Double.Parse(FoodPriceView.Text));
-            //Response.Write(Double.Parse(FoodPriceView.ToString()));
-            //Response.Write(Double.Parse(FoodPriceView.Text.ToString()));
-            //Response.Write(Convert.ToDouble(FoodPriceView.Text));
-            //Response.Write(Convert.ToDouble(FoodPriceView.ToString()));
-            //Response.Write(Convert.ToDouble(FoodPriceView.Text.ToString()));
-
-
-            //Response.Write(Convert.ToDouble(FoodPriceView.Text.ToString()));
-
-            Response.Write(aa);
-
-            order.Price = aa;
-            //Double.Parse(FoodPriceView.Text.ToString());
-
-
-            //Convert.ToDouble(FoodPriceView.Text);
+            order.Price = cart.Price;            
             order.StoreId = DropDownListStoreLocation.SelectedItem.ToString();
             order.Ordertime = DateTime.Now;
             order.InsertOrder();
@@ -98,23 +75,30 @@ namespace CS691final
                 FoodPriceView.Text = (cart.Price + (cart.Price * 0.1)).ToString();
                 tbxCustomize.Visible = false;
                 btnAddCustomizeTip.Visible = false;
+                cart.Price= Convert.ToDouble(FoodPriceView.Text.ToString());                
+                cart.UpdateCartPrice();
             }
             if (RadioButtonListTip.SelectedValue.Equals("0.15"))
             {
                 FoodPriceView.Text = (cart.Price + (cart.Price * 0.15)).ToString();
                 tbxCustomize.Visible = false;
                 btnAddCustomizeTip.Visible = false;
+                cart.Price = Convert.ToDouble(FoodPriceView.Text.ToString());
+                cart.UpdateCartPrice();
             }
             if (RadioButtonListTip.SelectedValue.Equals("0.2"))
             {
                 FoodPriceView.Text = (cart.Price + (cart.Price * 0.2)).ToString();
                 tbxCustomize.Visible = false;
                 btnAddCustomizeTip.Visible = false;
+                cart.Price = Convert.ToDouble(FoodPriceView.Text.ToString());
+                cart.UpdateCartPrice();
             }
             if (RadioButtonListTip.SelectedValue.Equals("1"))
             {
                 tbxCustomize.Visible = true;
                 btnAddCustomizeTip.Visible = true;
+
 
             }
 
@@ -128,12 +112,9 @@ namespace CS691final
             cart.Id = cartId;
             cart.ReadRecordById();
             FoodPriceView.Text = (cart.Price + Convert.ToDouble(tbxCustomize.Text.ToString())).ToString();
-            b = FoodPriceView.Text;
-            c = FoodPriceView.Text.ToString();
-            aa = Convert.ToDouble(c);
-            a= Double.Parse(FoodPriceView.Text.ToString());
-            Response.Write(aa);
-            // Response.Write(Double.Parse(FoodPriceView.Text.ToString()));
+            cart.Price = Convert.ToDouble(FoodPriceView.Text.ToString());
+            cart.UpdateCartPrice();
+            
 
 
         }

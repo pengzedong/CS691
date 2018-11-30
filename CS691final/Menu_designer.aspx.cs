@@ -22,11 +22,11 @@ namespace CS691final
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (Session["owner"] == null)
-            {
-                Response.Write("<script language=javascript> var agree; agree=confirm('You have to be owner first!!!'); window.location='Login.aspx';</script>");
+            //if (Session["owner"] == null)
+            //{
+            //    Response.Write("<script language=javascript> var agree; agree=confirm('You have to be owner first!!!'); window.location='Login.aspx';</script>");
 
-            }
+            //}
 
             menu_item_designer menuitem;
             List<menu_item_designer> itemList = new List<menu_item_designer>();
@@ -168,6 +168,53 @@ namespace CS691final
                 advertAdd.AD = tbxNewAdvert.Text;
                 advertAdd.InsertAdvertising();
                 Response.Redirect("Menu_designer.aspx");
+            }
+            catch (Exception ex)
+            {
+                lblError2.Text = ex.Message;
+            }
+        }
+
+        protected void btnBecomeDirector_Click(object sender, EventArgs e)
+        {
+            try {
+                EmployeeInfo employee = new EmployeeInfo();
+                employee.Name = RadioButtonListWaiterList.SelectedValue.ToString();
+                employee.ChangeEmployeePositionToDirector();
+                Response.Redirect("Menu_designer.aspx");
+
+            }
+            catch (Exception ex)
+            {
+                lblError2.Text = ex.Message;
+            }
+}
+
+        protected void btnDeleteWaiterOrDirect_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                EmployeeInfo employee = new EmployeeInfo();
+                employee.Name = RadioButtonDirector.SelectedValue.ToString();
+                employee.DeleteEmployee();
+                Response.Redirect("Menu_designer.aspx");
+
+            }
+            catch (Exception ex)
+            {
+                lblError2.Text = ex.Message;
+            }
+        }
+
+        protected void btnBecomeWaiter_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                EmployeeInfo employee = new EmployeeInfo();
+                employee.Name = RadioButtonDirector.SelectedValue.ToString();
+                employee.ChangeEmployeePositionToWaiter();
+                Response.Redirect("Menu_designer.aspx");
+
             }
             catch (Exception ex)
             {
