@@ -46,3 +46,11 @@ Iteration 2 Requirements:
 7. The software can use at 3 different restaurants in town(MUST have)
 8. The order infornation will have detail about order time and order restaurants name.(SHOULD have)
 9. The software can create weekly report and show all orders and workload on the waiters(MUST have)
+
+
+Iteration 3 Requirements:
+1. The order have some kind of status:  received, in-preparation, final touches, on the way, finished. (MUST have)
+2. Only direct can change the status(MUST have)
+3  The customer can give tip for order, like 20%,15%, or customerize number tip(SHOULD have)
+4  The owner can switch waiter to  change direct or switch back to waiter.(SHOULD have)
+5  The owener can delete the waiter account.(MUST have)
