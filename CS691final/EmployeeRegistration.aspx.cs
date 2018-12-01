@@ -13,6 +13,7 @@ namespace CS691final
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            //check owner use this function only
             if (Session["owner"] == null)
             {
                 Response.Write("<script language=javascript> var agree; agree=confirm('You have to be owner first!!!'); window.location='Login.aspx';</script>");
@@ -21,6 +22,7 @@ namespace CS691final
         }
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            //create account for employee
             EmployeeInfo employee = new EmployeeInfo();
             employee.UserName = tbxUsername.Text;
             employee.Name = tbxName.Text;
@@ -43,10 +45,6 @@ namespace CS691final
 
             }
 
-
-
-
-
-        }
+        }//end employee account create
     }
 }

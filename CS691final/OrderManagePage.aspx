@@ -15,6 +15,7 @@
 
     <form id="form1" runat="server">
 
+        <!-- display order flow -->
         <div class="container-fluid">
             <h1>FlovarTown Order </h1>
             <p><a href="Menu_designer.aspx">Back to Owner Page</a></p>
@@ -30,12 +31,14 @@
                     <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT Name, CONCAT(StoreID, Name)  as orderInfo FROM [Employee] where Position='Waiter' order by StoreID"></asp:SqlDataSource>
                     <asp:RadioButtonList ID="RadioButtonListWaiterList" runat="server" DataSourceID="SqlDataSource2" DataTextField="orderInfo" DataValueField="Name" AutoPostBack="True"></asp:RadioButtonList>
                     <div>
-                        <asp:Button ID="btnWork" runat="server" Text="Work on it" OnClick="btnWork_Click" /> 
+                        <asp:Button ID="btnWork" runat="server" Text="Work on it" OnClick="btnWork_Click" />
                         <br />
-                        <asp:Label ID="lblError" runat="server" Text=" "></asp:Label></div>
+                        <asp:Label ID="lblError" runat="server" Text=" "></asp:Label>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- END display -->
     </form>
 </body>
 </html>

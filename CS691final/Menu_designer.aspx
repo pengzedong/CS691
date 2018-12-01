@@ -65,7 +65,7 @@
         </div>
     </section>
 
-
+    <!-- Food menu disploy -->
 
 
     <section class="ftco-section bg-light">
@@ -312,9 +312,6 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- END -->
-
-                        <!-- END -->
 
 
                     </div>
@@ -322,6 +319,10 @@
             </div>
         </div>
     </section>
+
+    <!-- END fooe menu display -->
+
+    <!-- designer control  nav -->
     <section>
         <div>
             <form id="designerForm" class="form-horizontal" runat="server">
@@ -355,24 +356,24 @@
                     Add new Employee                   
                      <a href="EmployeeRegistration.aspx">Employee Registration</a>
                     <br />
-                    <div  class="btn btn-primary" data-toggle="collapse">
-                    Manger Employee list
+                    <div class="btn btn-primary" data-toggle="collapse">
+                        Manger Employee list
                     
                     <asp:RadioButtonList ID="RadioButtonListWaiterList" runat="server" DataSourceID="SqlDataSource2" DataTextField="Name" DataValueField="Name"></asp:RadioButtonList>
-                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Employee] where position ='Waiter'"></asp:SqlDataSource>
-                    
-                        </div>
-<asp:Button ID="btnBecomeDirector" runat="server" Text="BecomeDirector" OnClick="btnBecomeDirector_Click" />     
-                     <br />
-                    <div  class="btn btn-primary" data-toggle="collapse">
-                    Manger director list
+                        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Employee] where position ='Waiter'"></asp:SqlDataSource>
+
+                    </div>
+                    <asp:Button ID="btnBecomeDirector" runat="server" Text="BecomeDirector" OnClick="btnBecomeDirector_Click" />
+                    <br />
+                    <div class="btn btn-primary" data-toggle="collapse">
+                        Manger director list
                     
                     <asp:RadioButtonList ID="RadioButtonDirector" runat="server" DataSourceID="SqlDataSource3" DataTextField="Name" DataValueField="Name"></asp:RadioButtonList>
-                    <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Employee] where position ='Director'"></asp:SqlDataSource>
-                        
+                        <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Employee] where position ='Director'"></asp:SqlDataSource>
+
                     </div>
-<asp:Button ID="btnBecomeWaiter" runat="server" Text="BecomeWaiter" OnClick="btnBecomeWaiter_Click" />
-                        <br />
+                    <asp:Button ID="btnBecomeWaiter" runat="server" Text="BecomeWaiter" OnClick="btnBecomeWaiter_Click" />
+                    <br />
                     <asp:Button ID="btnDeleteWaiterOrDirect" runat="server" Text="DeleteEmployee" OnClick="btnDeleteWaiterOrDirect_Click" />
                     <br />
                     Manage Order System
@@ -386,7 +387,7 @@
 
         </div>
     </section>
-
+    <!-- END  designer control nav -->
 
     <footer class="ftco-footer ftco-bg-dark ftco-section">
         <div class="container">

@@ -120,7 +120,7 @@ namespace CS691final
 
         protected void btnSubmitChange_Click(object sender, EventArgs e)
         {
-
+            //change menu item
             try
             {
 
@@ -143,10 +143,11 @@ namespace CS691final
 
             }
 
-        }
+        }//end menu item change button
 
         protected void btnSubmitDelete_Click(object sender, EventArgs e)
         {
+            //menu item delete
             menu_item_designer itemDelete = new menu_item_designer();
             for (int i = 0; i < cblCheckDeleteItem.Items.Count; i++)
             {
@@ -158,10 +159,11 @@ namespace CS691final
                 }
 
             }
-        }
+        }//end menu item delete
 
         protected void btnSubmitNewAdvert_Click(object sender, EventArgs e)
         {
+            //page advert change button
             try
             {
                 menu_item_designer advertAdd = new menu_item_designer();
@@ -173,10 +175,11 @@ namespace CS691final
             {
                 lblError2.Text = ex.Message;
             }
-        }
+        }//end advert change button
 
         protected void btnBecomeDirector_Click(object sender, EventArgs e)
         {
+            //set waiter to director 
             try {
                 EmployeeInfo employee = new EmployeeInfo();
                 employee.Name = RadioButtonListWaiterList.SelectedValue.ToString();
@@ -192,6 +195,7 @@ namespace CS691final
 
         protected void btnDeleteWaiterOrDirect_Click(object sender, EventArgs e)
         {
+            //delete empployee account
             try
             {
                 EmployeeInfo employee = new EmployeeInfo();
@@ -204,10 +208,11 @@ namespace CS691final
             {
                 lblError2.Text = ex.Message;
             }
-        }
+        }//end delete employee account button
 
         protected void btnBecomeWaiter_Click(object sender, EventArgs e)
         {
+            //set dircor to become waiter button
             try
             {
                 EmployeeInfo employee = new EmployeeInfo();

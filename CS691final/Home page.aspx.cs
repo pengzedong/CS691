@@ -19,6 +19,8 @@ namespace CS691final
             menu_item_designer AdDesigner = new menu_item_designer();
             AdDesigner.ReadNewestAdvertising();
             advertising = AdDesigner.AD;
+
+            //check the user name if user login in, disploy customer order view page
             if (Session["user"] != null) {
                 ButtonLoginName.Visible = true;
                 ButtonLoginName.Text = Session["user"].ToString();
@@ -33,6 +35,7 @@ namespace CS691final
 
         protected void ButtonLoginName_Click(object sender, EventArgs e)
         {
+            //go to order display page
              Response.Redirect("CustomerOrderView.aspx");
         }
     }

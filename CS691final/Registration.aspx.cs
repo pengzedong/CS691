@@ -17,6 +17,7 @@ namespace CS691final
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            //submit the user information to customer table
             CustomerInfo customer = new CustomerInfo();
             customer.UserName = tbxUsername.Text;
             customer.Name = tbxName.Text;
@@ -29,17 +30,18 @@ namespace CS691final
                 customer.InsertCustomerData();
                 Response.Write("<script> alert('Welcome to FloverTown')</script>");
                 Response.Redirect("Login.aspx");
-               // Response.AddHeader("refresh", "3;url=Login.aspx");
+                // Response.AddHeader("refresh", "3;url=Login.aspx");
             }
-            else {
+            else
+            {
                 lblWarming.Text = "The username already exit!";
                 lblWarming.ForeColor = System.Drawing.Color.Red;
                 //Response.AddHeader("refresh", "3;url=Login.aspx");
 
             }
 
-           
-            
+
+
 
 
         }

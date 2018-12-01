@@ -55,6 +55,7 @@ namespace CS691final.App_Code
             }
         }//close checkUserExit() method
 
+
         //check password is correct
         public bool checkPassword()
         {
@@ -75,7 +76,7 @@ namespace CS691final.App_Code
                 }
             }
             return false;
-        }
+        }//end check password is correct
 
 
 

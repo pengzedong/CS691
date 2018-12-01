@@ -52,10 +52,9 @@ namespace CS691final.App_Code
             comd.Parameters.AddWithValue("@id", this.Id);
             comd.ExecuteNonQuery();
             conn.Close();
+        }//end Updatawaiter
 
-
-        }
-
+        //updata order status
         public void UpdateOrderStatus() {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
@@ -67,10 +66,10 @@ namespace CS691final.App_Code
             conn.Close();
 
 
-        }
+        }//end updata order status
 
 
-         
+
 
 
 

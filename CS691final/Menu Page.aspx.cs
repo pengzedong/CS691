@@ -15,7 +15,7 @@ namespace CS691final
 
 
         protected string advertising = "";
-        
+
 
 
 
@@ -28,7 +28,6 @@ namespace CS691final
             conn.Open();
             string qry = "select top 12 * from Food_menu";
             SqlCommand cmd = new SqlCommand(qry, conn);
-
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
@@ -47,6 +46,7 @@ namespace CS691final
             dr.Close();
             conn.Close();
 
+            //make label on the list
             List<Label> nameList = new List<Label>();
             List<Label> infoList = new List<Label>();
             List<Label> priceList = new List<Label>();
@@ -91,26 +91,19 @@ namespace CS691final
             priceList.Add(FoodPriceLabel012);
 
 
-
+            //put value on each label
             for (int i = 0; i < itemList.Count; i++)
             {
                 nameList[i].Text = itemList[i].FoodName;
                 infoList[i].Text = itemList[i].IngredientsInfo + itemList[i].AllergenInfo + itemList[i].CategoriesInfo;
                 priceList[i].Text = itemList[i].Price.ToString();
             }
-
-
-
-
+            //load the advert
             menu_item_designer AdDesigner = new menu_item_designer();
             AdDesigner.ReadNewestAdvertising();
             advertising = AdDesigner.AD;
 
-
-
-
         }
 
-       
     }
 }

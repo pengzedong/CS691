@@ -30,13 +30,8 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <style>
-       
-    </style>
-    
 </head>
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container">
             <a class="navbar-brand" href="Home page.aspx">Flavortown restaurant</a>
@@ -62,20 +57,22 @@
             <div class="container">
                 <div class="row slider-text align-items-center justify-content-center">
                     <div class="col-md-10 col-sm-12 ftco-animate text-center">
-                        <%--  <p class="breadcrumbs"><span class="mr-2"><a href="Home page.aspx">Home</a></span> <span>Menu</span></p>--%>
+                    
                         <h1 class="mb-3">Employee Registration</h1>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- END title  -->
 
 
+    <!-- reservation nav -->
     <section class="ftco-section">
       <div class="container">
         <div class="row no-gutters justify-content-center mb-5 pb-5">
           <div class="col-md-7 text-center heading-section ftco-animate">
-            <h2>Make a Reservation</h2>
+            <h2>Employee Registration</h2>
           </div>
         </div>
         <div class="row d-flex">
@@ -133,7 +130,7 @@
       </div>
     </section>
 
-
+    <!-- END resgistration nav -->
     
     <!-- loader -->
     <div id="ftco-loader" class="show fullscreen">

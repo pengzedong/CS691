@@ -72,7 +72,7 @@
             </div>
         </section>
 
-
+        <!-- order confirm nav -->
         <section class="ftco-section">
             <div class="container">
                 <div class="row no-gutters justify-content-center mb-5 pb-5">
@@ -146,7 +146,7 @@
             </div>
         </section>
 
-
+        <!-- order confimation nav -->
 
         <!-- loader -->
         <div id="ftco-loader" class="show fullscreen">

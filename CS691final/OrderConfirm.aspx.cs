@@ -15,7 +15,7 @@ namespace CS691final
 
     {
         string cartId;
-       
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -48,6 +48,7 @@ namespace CS691final
         //submit the order 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            //add cart info to the order table
             ShoppingCart cart = new ShoppingCart();
             cart.Id = cartId;
             cart.ReadRecordById();
@@ -56,7 +57,7 @@ namespace CS691final
             OrderUti order = new OrderUti();
             order.UserName = cart.UserName;
             order.OrderFood = cart.OrderFood;
-            order.Price = cart.Price;            
+            order.Price = cart.Price;
             order.StoreId = DropDownListStoreLocation.SelectedItem.ToString();
             order.Ordertime = DateTime.Now;
             order.InsertOrder();
@@ -66,6 +67,7 @@ namespace CS691final
 
         protected void RadioButtonListTip_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //change food price at cart table 
             ShoppingCart cart = new ShoppingCart();
             cart.Id = cartId;
             cart.ReadRecordById();
@@ -75,7 +77,7 @@ namespace CS691final
                 FoodPriceView.Text = (cart.Price + (cart.Price * 0.1)).ToString();
                 tbxCustomize.Visible = false;
                 btnAddCustomizeTip.Visible = false;
-                cart.Price= Convert.ToDouble(FoodPriceView.Text.ToString());                
+                cart.Price = Convert.ToDouble(FoodPriceView.Text.ToString());
                 cart.UpdateCartPrice();
             }
             if (RadioButtonListTip.SelectedValue.Equals("0.15"))
@@ -104,19 +106,20 @@ namespace CS691final
 
             //Response.Redirect("OrderConfirm.aspx");
 
-        }
+        }//end change food price at cart table
 
         protected void btnAddCustomizeTip_Click(object sender, EventArgs e)
         {
+            //add the customize tip
             ShoppingCart cart = new ShoppingCart();
             cart.Id = cartId;
             cart.ReadRecordById();
             FoodPriceView.Text = (cart.Price + Convert.ToDouble(tbxCustomize.Text.ToString())).ToString();
             cart.Price = Convert.ToDouble(FoodPriceView.Text.ToString());
             cart.UpdateCartPrice();
-            
 
 
-        }
+
+        }//end customize tip
     }
 }

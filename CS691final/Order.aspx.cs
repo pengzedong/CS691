@@ -121,6 +121,7 @@ namespace CS691final
 
         protected void btnSubmitToCart_Click(object sender, EventArgs e)
         {
+            //add checked item to the cart
 
             string orderfood = " ";
             decimal price = 0;

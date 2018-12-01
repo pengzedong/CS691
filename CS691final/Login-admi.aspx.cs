@@ -17,24 +17,14 @@ namespace CS691final
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            //var user = tbxUsername.Text.ToString();
-            //var password = tbxPassword.Text.ToString();
-            //if (!user.Equals("abc") & !password.Equals("good"))
-            //{
-            //    LoginStatusMessage.Visible = true;
-            //    LoginStatusMessage.Text = "User name or Password is not correct !";
-            //}
-
-
-            //if (user.Equals("abc") & password.Equals("good")){
-            //    Response.Redirect("Menu-designer.aspx");
-            //}
+            
 
             EmployeeInfo employee = new EmployeeInfo();
             employee.UserName = tbxUsername.Text;
             employee.Password = tbxPassword.Text.ToString();
             if (employee.checkPassword())
             {
+                //check owner account, and leap owner to designer page 
                 if (tbxUsername.Text.Equals("owner"))
                 {
                     Session["owner"] = tbxUsername.Text;
@@ -57,10 +47,7 @@ namespace CS691final
                 LoginStatusMessage.Text = "User name or Password is not correct !";
 
             }
-
-
-
-        }
+        }//end button
 
 
     }

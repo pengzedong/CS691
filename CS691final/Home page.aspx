@@ -59,6 +59,7 @@
     </nav>
     <!-- END nav -->
 
+    <!-- display picture section  -->
     <section class="home-slider owl-carousel">
         <div class="slider-item" style="background-image: url('images/menu-03.jpg');" data-stellar-background-ratio="0.5">
             <div class="overlay"></div>

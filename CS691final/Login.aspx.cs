@@ -17,6 +17,7 @@ namespace CS691final
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
+            //check customer username and password
             CustomerInfo customer = new CustomerInfo();
             customer.UserName = tbxUsername.Text;
             customer.Password = tbxPassword.Text.ToString();
@@ -33,6 +34,6 @@ namespace CS691final
                 LoginStatusMessage.Text = "User name or Password is not correct !";
 
             }
-        }
+        }//end login submit button
     }
 }

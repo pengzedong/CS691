@@ -37,6 +37,8 @@ namespace CS691final.App_Code
 
         }//close insertShoppingCart method
 
+
+        //read infornation for shopping cart table
         public void ReadRecordById()
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
@@ -54,9 +56,10 @@ namespace CS691final.App_Code
 
             dr.Close();
             conn.Close();
+        }//end read record by id
 
 
-        }
+        //update price at shopping cart
         public void UpdateCartPrice() {
 
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
@@ -70,7 +73,7 @@ namespace CS691final.App_Code
             cmd.ExecuteNonQuery();
             conn.Close();
 
-        }
+        }//end uddate cart price
 
          
 

@@ -71,6 +71,7 @@
         </div>
     </section>
 
+    <!-- manager login section  -->
     <section class="ftco-section">
       <div class="container">
         <div class="row no-gutters justify-content-center mb-5 pb-5">
@@ -109,9 +110,10 @@
         </div>
       </div>
     </section>
-
+    
+    
     <asp:Label ID="lblSubmitWarming" runat="server" Text=" "></asp:Label>
-     
+     <!-- END employee login section -->
    
     <div style="float: right">
         <a href="Login.aspx ">Customer Login</a>

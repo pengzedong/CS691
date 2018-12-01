@@ -54,6 +54,7 @@
         </nav>
         <!-- END nav -->
 
+
         <section class="home-slider owl-carousel">
             <div class="slider-item" style="background-image: url('images/menu-02.jpg');" data-stellar-background-ratio="0.5">
                 <div class="overlay"></div>
@@ -69,7 +70,7 @@
         </section>
 
 
-
+    <!-- menu  display -->
 
         <section class="ftco-section bg-light">
             <div class="container">
@@ -316,7 +317,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- END -->
+                            <!-- END -->    <!-- END menu display -->
+
+                            <!-- order function nav -->
                             <div class="col-md-12 mt-3">
                                 <div class="form-group">
                                     <asp:CheckBoxList ID="CheckBoxListFood" runat="server" DataSourceID="SqlDataSource1" DataTextField="Food_Name" DataValueField="Food_price"></asp:CheckBoxList>
@@ -327,7 +330,7 @@
                                 </div>
                             </div>
 
-                            <!-- END -->
+                       <!-- END order function nav -->
 
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
                                 <div class="row">

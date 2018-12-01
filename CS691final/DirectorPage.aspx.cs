@@ -20,6 +20,7 @@ namespace CS691final
             OrderUti order = new OrderUti();
             string status = DropDownListStatus.SelectedItem.Text.ToString();
 
+            //find all selected items and change to statua display at dropdownlist 
             for (int i = 0; i < CheckBoxListOrderRecived.Items.Count; i++)
             {
 
@@ -71,7 +72,7 @@ namespace CS691final
                 }
             }
             Response.Redirect("DirectorPage.aspx");
-        }
+        }//end button
 
 
     }

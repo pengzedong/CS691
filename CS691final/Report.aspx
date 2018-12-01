@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-
+        <!-- display weekly report -->
         <div class="container-fluid">
             <h1>FlovarTown Weekly Report</h1>
             <p><a href="Menu_designer.aspx">Back to Owner Page</a></p>
@@ -36,7 +36,8 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
+        <!-- END display weekly report -->
     </form>
 </body>
 </html>

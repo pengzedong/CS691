@@ -69,8 +69,9 @@
             </div>
         </div>
     </section>
+    <!-- END  title nav -->
 
-
+    <!-- show order information  -->
     <section class="ftco-section">
         <div class="container">
             <div class="row no-gutters justify-content-center mb-5 pb-5">
@@ -108,7 +109,7 @@
             </div>
         </div>
     </section>
-
+    <!-- END order information  -->
 
     <div style="float: right">
         <a href="Login-admi.aspx ">Manager page(administrator only)</a>

@@ -9,6 +9,7 @@ namespace CS691final.App_Code
 {
     public class EncrytPassword
     {
+        //add encrtpy password
         public static string encryptString(string input)
         {
             MD5 md5 = new MD5CryptoServiceProvider();
