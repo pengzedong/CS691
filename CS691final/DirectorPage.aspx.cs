@@ -19,10 +19,10 @@ namespace CS691final
         {
             OrderUti order = new OrderUti();
             string status = DropDownListStatus.SelectedItem.Text.ToString();
-          
-                for (int i = 0; i < CheckBoxListOrderRecived.Items.Count; i++)
+
+            for (int i = 0; i < CheckBoxListOrderRecived.Items.Count; i++)
             {
-                 
+
                 if (CheckBoxListOrderRecived.Items[i].Selected)
                 {
                     order.Id = CheckBoxListOrderRecived.Items[i].Value;
@@ -30,7 +30,7 @@ namespace CS691final
                     order.UpdateOrderStatus();
                 }
             }
-for (int i = 0; i < CheckBoxListInPreparation.Items.Count; i++)
+            for (int i = 0; i < CheckBoxListInPreparation.Items.Count; i++)
             {
                 if (CheckBoxListInPreparation.Items[i].Selected)
                 {
@@ -40,7 +40,7 @@ for (int i = 0; i < CheckBoxListInPreparation.Items.Count; i++)
                 }
             }
 
-for (int i = 0; i < CheckBoxListFianlTouch.Items.Count; i++)
+            for (int i = 0; i < CheckBoxListFianlTouch.Items.Count; i++)
             {
                 if (CheckBoxListFianlTouch.Items[i].Selected)
                 {
@@ -50,7 +50,7 @@ for (int i = 0; i < CheckBoxListFianlTouch.Items.Count; i++)
                 }
             }
 
- for (int i = 0; i < CheckBoxListOnTheWay.Items.Count; i++)
+            for (int i = 0; i < CheckBoxListOnTheWay.Items.Count; i++)
             {
                 if (CheckBoxListOnTheWay.Items[i].Selected)
                 {
@@ -73,6 +73,6 @@ for (int i = 0; i < CheckBoxListFianlTouch.Items.Count; i++)
             Response.Redirect("DirectorPage.aspx");
         }
 
-        
+
     }
 }

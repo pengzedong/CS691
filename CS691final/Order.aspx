@@ -30,9 +30,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <form id="form1" runat="server">
-
+<form runat=server>
+    
         <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
             <div class="container">
                 <a class="navbar-brand" href="Home page.aspx">Flavortown restaurant</a>
@@ -48,6 +47,9 @@
                         <li class="nav-item"><a href="Login.aspx" class="nav-link">Login</a></li>
                     </ul>
                 </div>
+                
+                <asp:Button ID="ButtonLoginName" runat="server" Text=" " Visible="False" OnClick="ButtonLoginName_Click" />
+            
             </div>
         </nav>
         <!-- END nav -->
@@ -380,8 +382,8 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
         <script src="js/google-map.js"></script>
         <script src="js/main.js"></script>
-
     </form>
+    
 
 </body>
 </html>

@@ -29,6 +29,8 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+
+    
 </head>
 <body>
 
@@ -41,14 +43,18 @@
                 <span class="oi oi-menu"></span>Menu
             </button>
 
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse" id="ftco-nav" >
+                <ul class="navbar-nav ml-auto"  >
                     <li class="nav-item active"><a href="Home page.aspx" class="nav-link">Home</a></li>
                     <li class="nav-item"><a href="Menu Page.aspx" class="nav-link">Menu</a></li>
                     <li class="nav-item"><a href="Order.aspx" class="nav-link">Order</a></li>
-                    <li class="nav-item"><a href="Login.aspx" class="nav-link">Login</a></li>
+                    <li class="nav-item" id="lo"><a href="Login.aspx" class="nav-link">Login </a></li>
+                     
                 </ul>
             </div>
+            <form runat=server>
+                <asp:Button ID="ButtonLoginName" runat="server" Text="Button" Visible="False" OnClick="ButtonLoginName_Click" />
+            </form>
         </div>
     </nav>
     <!-- END nav -->

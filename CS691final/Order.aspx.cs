@@ -25,7 +25,12 @@ namespace CS691final
                 Response.Write("<script language=javascript> var agree; agree=confirm('You have to log in first'); window.location='Login.aspx';</script>");
 
             }
+            if (Session["user"] != null)
+            {
+                ButtonLoginName.Visible = true;
+                ButtonLoginName.Text = Session["user"].ToString();
 
+            }
 
             menu_item_designer menuitem;
             List<menu_item_designer> itemList = new List<menu_item_designer>();
@@ -137,5 +142,10 @@ namespace CS691final
             Response.Redirect("OrderConfirm.aspx");
             
         }//close Cart submit
+
+        protected void ButtonLoginName_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("CustomerOrderView.aspx");
+        }
     }
 }

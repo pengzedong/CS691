@@ -91,6 +91,7 @@
     <Content Include="css\owl.carousel.min.css" />
     <Content Include="css\owl.theme.default.min.css" />
     <Content Include="css\style.css" />
+    <Content Include="CustomerOrderView.aspx" />
     <Content Include="EmployeeRegistration.aspx" />
     <Content Include="fonts\flaticon\backup.txt" />
     <Content Include="fonts\flaticon\font\flaticon.css" />
@@ -141,6 +142,13 @@
     <Compile Include="App_Code\menu_item_designer.cs" />
     <Compile Include="App_Code\OrderUti.cs" />
     <Compile Include="App_Code\ShoppingCart.cs" />
+    <Compile Include="CustomerOrderView.aspx.cs">
+      <DependentUpon>CustomerOrderView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CustomerOrderView.aspx.designer.cs">
+      <DependentUpon>CustomerOrderView.aspx</DependentUpon>
+    </Compile>
     <Compile Include="EmployeeRegistration.aspx.cs">
       <DependentUpon>EmployeeRegistration.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
