@@ -1,7 +1,7 @@
 CS 691 Restaurant Project
 
 //Desinger: Zedong Peng
-Quality control: 
+Quality control: Huseyin Ergin
 
 This is a website software design by Visual Studio 2017.
 
@@ -52,5 +52,5 @@ Iteration 3 Requirements:
 1. The order have some kind of status:  received, in-preparation, final touches, on the way, finished. (MUST have)
 2. Only direct can change the status(MUST have)
 3  The customer can give tip for order, like 20%,15%, or customerize number tip(SHOULD have)
-4  The owner can switch waiter to  change direct or switch back to waiter.(SHOULD have)
-5  The owener can delete the waiter account.(MUST have)
+4  The owner can switch waiter to  change director or switch back to waiter.(SHOULD have)
+5  The owener can delete the waiteror director account.(MUST have)
