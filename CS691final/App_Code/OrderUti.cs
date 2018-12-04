@@ -46,7 +46,7 @@ namespace CS691final.App_Code
         {
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
-            string updataStr = "update OrderHistory Set OrderHistory.Waiter=@waiter ,OrderHistory.Status ='Order in-preparation' where OrderHistory.OrderID=@id";
+            string updataStr = "update OrderHistory Set OrderHistory.Waiter=@waiter  where OrderHistory.OrderID=@id";
             SqlCommand comd = new SqlCommand(updataStr, conn);
             comd.Parameters.AddWithValue("@waiter", this.Waiter);
             comd.Parameters.AddWithValue("@id", this.Id);

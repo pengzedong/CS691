@@ -72,7 +72,6 @@
     <Content Include="App_Data\foodCompany_log.ldf">
       <DependentUpon>foodCompany.mdf</DependentUpon>
     </Content>
-    <Content Include="Class diagram%28after iteration 2%29.JPG" />
     <Content Include="css\ajax-loader.gif" />
     <Content Include="css\animate.css" />
     <Content Include="css\aos.css" />
@@ -109,6 +108,7 @@
     <Content Include="images\menu-01.jpg" />
     <Content Include="images\menu-02.jpg" />
     <Content Include="images\menu-03.jpg" />
+    <Content Include="Iteration 3 class diagram.png" />
     <Content Include="js\aos.js" />
     <Content Include="js\bootstrap-datepicker.js" />
     <Content Include="js\bootstrap.min.js" />
