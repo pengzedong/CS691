@@ -51,6 +51,6 @@ Iteration 2 Requirements:
 Iteration 3 Requirements:
 1. The order have some kind of status:  received, in-preparation, final touches, on the way, finished. (MUST have)
 2. Only direct can change the status(MUST have)
-3  The customer can give tip for order, like 20%,15%, or customerize number tip(SHOULD have)
-4  The owner can switch waiter to  change director or switch back to waiter.(SHOULD have)
-5  The owener can delete the waiteror director account.(MUST have)
+3.  The customer can give tip for order, like 20%,15%, or customerize number tip(SHOULD have)
+4.  The owner can switch waiter to  change director or switch back to waiter.(SHOULD have)
+5.  The owener can delete the waiteror director account.(MUST have)
