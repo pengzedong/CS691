@@ -1,22 +1,22 @@
 CS 691 Restaurant Project
 
 //Desinger: Zedong Peng
-Quality control: 
+Quality control: Huseyin Ergin
 
 This is a website software design by Visual Studio 2017.
 
 The Funtion for each page:
-Home Page - display the resraurant logo and name, for nav bar for customer use;
-Menu page - display the food menu;
-Login - customer use to login account;
-Login-admi - owner and waiter use to login in ;
-Registration - customer use to create account;
-EmployeeRegistration - the new waiter can create account;
-Menu_designer -- owner use to add/delete item at menu and change the advert tag, and link to other manager page;
-order -- customer use to choose food and put on the cart;
-orderConfirm -- customer can give orders base on cart and choose which store;
-OrderMangerPage -- owner can give the order to waiter, so that waiter can prepare the order;
-Report - owner can see the weekly report about the food sell and waiter workload.
+1. Home Page - display the resraurant logo and name, for nav bar for customer use;
+2. Menu page - display the food menu;
+3. Login - customer use to login account;
+4. Login-admi - owner and waiter use to login in ;
+5. Registration - customer use to create account;
+6. EmployeeRegistration - the new waiter can create account;
+7. Menu_designer -- owner use to add/delete item at menu and change the advert tag, and link to other manager page;
+8. order -- customer use to choose food and put on the cart;
+9. orderConfirm -- customer can give orders base on cart and choose which store;
+10. OrderMangerPage -- owner can give the order to waiter, so that waiter can prepare the order;
+11. Report - owner can see the weekly report about the food sell and waiter workload.
 
 
 
@@ -51,6 +51,6 @@ Iteration 2 Requirements:
 Iteration 3 Requirements:
 1. The order have some kind of status:  received, in-preparation, final touches, on the way, finished. (MUST have)
 2. Only direct can change the status(MUST have)
-3  The customer can give tip for order, like 20%,15%, or customerize number tip(SHOULD have)
-4  The owner can switch waiter to  change direct or switch back to waiter.(SHOULD have)
-5  The owener can delete the waiter account.(MUST have)
+3.  The customer can give tip for order, like 20%,15%, or customerize number tip(SHOULD have)
+4.  The owner can switch waiter to  change director or switch back to waiter.(SHOULD have)
+5.  The owener can delete the waiteror director account.(MUST have)
