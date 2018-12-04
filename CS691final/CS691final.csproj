@@ -102,6 +102,8 @@
     <Content Include="fonts\ionicons\fonts\ionicons.svg" />
     <Content Include="fonts\open-iconic\open-iconic.svg" />
     <Content Include="Home page.aspx" />
+    <Content Include="HomeBSU.aspx" />
+    <Content Include="HomeMall.aspx" />
     <Content Include="images\logo01.PNG" />
     <Content Include="images\Logo02.PNG" />
     <Content Include="images\menu-01.jpg" />
@@ -162,6 +164,20 @@
     </Compile>
     <Compile Include="Home page.aspx.designer.cs">
       <DependentUpon>Home page.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeBSU.aspx.cs">
+      <DependentUpon>HomeBSU.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeBSU.aspx.designer.cs">
+      <DependentUpon>HomeBSU.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomeMall.aspx.cs">
+      <DependentUpon>HomeMall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomeMall.aspx.designer.cs">
+      <DependentUpon>HomeMall.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login-admi.aspx.cs">
       <DependentUpon>Login-admi.aspx</DependentUpon>

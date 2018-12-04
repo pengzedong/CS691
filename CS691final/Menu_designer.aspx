@@ -328,8 +328,13 @@
             <form id="designerForm" class="form-horizontal" runat="server">
 
                 <div>
-                    Change Advertising<asp:TextBox ID="tbxNewAdvert" runat="server"></asp:TextBox><asp:Button ID="btnSubmitNewAdvert" runat="server" Text="Submit New Advert" OnClick="btnSubmitNewAdvert_Click" />
+                    Change Advertising main<asp:TextBox ID="tbxNewAdvert" runat="server"></asp:TextBox><asp:Button ID="btnSubmitNewAdvert" runat="server" Text="Submit New Advert to main store" OnClick="btnSubmitNewAdvert_Click" />
+
                     <asp:Label ID="lblError2" runat="server" Text=" "></asp:Label>
+                    <br />
+                    Change Advertising BSU<asp:TextBox ID="tbxNewAdvertBSU" runat="server"></asp:TextBox><asp:Button ID="btnBSU" runat="server" Text="Submit New Advert to Bsu store" OnClick="btnBSU_Click" />
+                    <br />
+                    Change Advertising Mall<asp:TextBox ID="tbxMall" runat="server"></asp:TextBox><asp:Button ID="btnMall" runat="server" Text="Submit New Advert to mall store" OnClick="btnMall_Click" />
                 </div>
 
 

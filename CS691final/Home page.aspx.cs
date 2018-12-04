@@ -38,5 +38,20 @@ namespace CS691final
             //go to order display page
              Response.Redirect("CustomerOrderView.aspx");
         }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (DropDownList1.SelectedValue.Equals("1")) {
+                Response.Redirect("Home_page.aspx");
+            }
+            if (DropDownList1.SelectedValue.Equals("2"))
+            {
+                Response.Redirect("HomeBSU.aspx");
+            }
+            if (DropDownList1.SelectedValue.Equals("3"))
+            {
+                Response.Redirect("HomeMall.aspx");
+            }
+        }
     }
 }

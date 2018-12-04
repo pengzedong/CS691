@@ -226,5 +226,21 @@ namespace CS691final
                 lblError2.Text = ex.Message;
             }
         }
+
+        protected void btnBSU_Click(object sender, EventArgs e)
+        {
+            menu_item_designer advertAdd = new menu_item_designer();
+            advertAdd.AD = tbxNewAdvertBSU.Text;
+            advertAdd.InsertAdvertisingBSU();
+            Response.Redirect("Menu_designer.aspx");
+        }
+
+        protected void btnMall_Click(object sender, EventArgs e)
+        {
+            menu_item_designer advertAdd = new menu_item_designer();
+            advertAdd.AD = tbxMall.Text;
+            advertAdd.InsertAdvertisingMall();
+            Response.Redirect("Menu_designer.aspx");
+        }
     }
 }

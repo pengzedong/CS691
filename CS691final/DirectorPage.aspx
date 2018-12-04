@@ -18,7 +18,7 @@
                     <br />
                     <asp:CheckBoxList ID="CheckBoxListOrderRecived" runat="server" DataSourceID="SqlDataSource1" DataTextField="info" DataValueField="OrderID" AutoPostBack="True"></asp:CheckBoxList>
 
-                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [OrderID], [OrderTime], [OrderFood], [Waiter], [Status], concat( [OrderTime], [OrderFood], [Waiter]) as info FROM [OrderHistory] where status ='Received Order' order by orderTime"></asp:SqlDataSource>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [OrderID], [OrderTime], [OrderFood], [Waiter], [Status], concat( [OrderTime], [OrderFood], [Waiter]) as info FROM [OrderHistory] where status ='Order Recevied' order by orderTime"></asp:SqlDataSource>
 
                 </div>
             </div>
@@ -63,7 +63,7 @@
        <!-- change order button -->
         <div>
             <asp:DropDownList ID="DropDownListStatus" runat="server" AutoPostBack="True">
-                <asp:ListItem Value="0">Received Order</asp:ListItem>
+                <asp:ListItem Value="0">Order Recevied</asp:ListItem>
                 <asp:ListItem Value="1">Order in-preparation</asp:ListItem>
                 <asp:ListItem Value="2">Final Touch</asp:ListItem>
                 <asp:ListItem Value="3">On the way</asp:ListItem>

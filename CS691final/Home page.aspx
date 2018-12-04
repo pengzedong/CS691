@@ -54,6 +54,11 @@
             </div>
             <form runat=server>
                 <asp:Button ID="ButtonLoginName" runat="server" Text="Button" Visible="False" OnClick="ButtonLoginName_Click" />
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                    <asp:ListItem Value="1">Main store</asp:ListItem>
+                    <asp:ListItem Value="2">BSU store</asp:ListItem>
+                    <asp:ListItem Value="3">Mall store</asp:ListItem>
+                </asp:DropDownList>
             </form>
         </div>
     </nav>

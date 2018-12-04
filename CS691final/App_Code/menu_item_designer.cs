@@ -53,9 +53,33 @@ namespace CS691final.App_Code
             AD = dr["advertising"].ToString();
             dr.Close();
             conn.Close();
-
-
         }
+
+        public void ReadNewestAdvertisingBSU()
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string qry = "select top 1 advertising from advert_Store2 order by id desc";
+            SqlCommand cmd = new SqlCommand(qry, conn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            AD = dr["advertising"].ToString();
+            dr.Close();
+            conn.Close();
+        }
+        public void ReadNewestAdvertisingMall()
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string qry = "select top 1 advertising from advert_Store3 order by id desc";
+            SqlCommand cmd = new SqlCommand(qry, conn);
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            AD = dr["advertising"].ToString();
+            dr.Close();
+            conn.Close();
+        }
+
 
         //put new advert in the database
         public void InsertAdvertising ()
@@ -63,6 +87,35 @@ namespace CS691final.App_Code
             SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             conn.Open();
             string qryStr = "insert into [advert] (advertising )values (@advert) select @@identity";
+            ////@@IDENTITY returns the last identity value generated for any table in the current session
+            SqlCommand cmd = new SqlCommand(qryStr, conn);
+
+            cmd.Parameters.AddWithValue("@advert", AD);
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            dr.Close();
+            conn.Close();
+        }
+
+        public void InsertAdvertisingBSU()
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string qryStr = "insert into [advert_store2] (advertising )values (@advert) select @@identity";
+            ////@@IDENTITY returns the last identity value generated for any table in the current session
+            SqlCommand cmd = new SqlCommand(qryStr, conn);
+
+            cmd.Parameters.AddWithValue("@advert", AD);
+            SqlDataReader dr = cmd.ExecuteReader();
+            dr.Read();
+            dr.Close();
+            conn.Close();
+        }
+        public void InsertAdvertisingMall()
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
+            string qryStr = "insert into [advert_store3] (advertising )values (@advert) select @@identity";
             ////@@IDENTITY returns the last identity value generated for any table in the current session
             SqlCommand cmd = new SqlCommand(qryStr, conn);
 
